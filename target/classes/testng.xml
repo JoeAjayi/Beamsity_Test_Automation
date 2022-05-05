@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Beamsity Appl			ication Test Automation Test Suite" parallel="none">
+
+	<listeners>
+		<listener class-name="com.fbistech.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="com.fbistech.ExtentReportListener.TestJiraListener" />
+	</listeners>
+
+	<test name="Beamsity App Test Cases" parallel="none">
+		<classes>
+			<class name="com.fbistech.testcases.CompanyPageTest"></class>
+			<class name="com.fbistech.testcases.CoursesPageTest"></class>
+			<class name="com.fbistech.testcases.HomePageTest"></class>
+			<class name="com.fbistech.testcases.LoginPageTest"></class>
+			<class name="com.fbistech.testcases.School_OrganizationPageTest"></class>
+			<class name="com.fbistech.testcases.SignupPageTest"></class>
+			<class name="com.fbistech.testcases.SponsorPageTest"></class>
+			<class name="com.fbistech.testcases.SubscribePageTest"></class>
+<!--  -->	<class name="com.fbistech.testcases.TutorPageTest"></class>
+		
+			
+		</classes>
+	</test>
+</suite>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" 
+	[<!ENTITY raw_listeners SYSTEM "testng/_listener/raw_listeners_no_compact.xml">]> 
+	<suite name = "OSS Simple Test" configfailurepolicy = "continue"> <test name 
+	= "Simple upload and download" preserve-order = "true"> <classes> <class 
+	name = "com.jcloud.test.jss.object.s3.HttpOnlyTest"/> </classes> </test> 
+	&raw_listeners; </suite> -->

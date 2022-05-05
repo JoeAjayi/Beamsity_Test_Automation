@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2,842.66" tests="120" errors="0" skipped="26" failures="28">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.301-b09"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/josephajayi/eclipse-workspace/Beamsity_Test_Automation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="NG"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/josephajayi/eclipse-workspace/Beamsity_Test_Automation"/>
+    <property name="java.runtime.version" value="1.8.0_301-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/j4/j04gn4bj1dl177nd39f_c1h80000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.3_1/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/josephajayi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.3_1/libexec/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.3_1/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/josephajayi"/>
+    <property name="user.timezone" value="Africa/Lagos"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="josephajayi"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.3_1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_301"/>
+    <property name="java.ext.dirs" value="/Users/josephajayi/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.6.3_1/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="verifyUserCanClickCoursesLink" classname="com.fbistech.testcases.CoursesPageTest" time="10.048">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;ant-dropdown-trigger ant-dropdown-link&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 31e8344b57320db40910b0eda6e7cc1d&#10;*** Element info: {Using=xpath, value=//a[@class=&apos;ant-dropdown-trigger ant-dropdown-link&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ant-dropdown-trigger ant-dropdown-link']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31e8344b57320db40910b0eda6e7cc1d
+*** Element info: {Using=xpath, value=//a[@class='ant-dropdown-trigger ant-dropdown-link']}
+	at com.fbistech.testcases.CoursesPageTest.verifyUserCanClickCoursesLink(CoursesPageTest.java:40)
+</failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 38011
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:20:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanClickSchools_OrganizationsPageLink" classname="com.fbistech.testcases.ContactUsPageTest" time="15.114"/>
+  <testcase name="verifyUserCanClickOnTeachOnBeamsitykLink" classname="com.fbistech.testcases.ContactUsPageTest" time="8.923"/>
+  <testcase name="verifyUserCanClickOnContactUsLinks" classname="com.fbistech.testcases.ContactUsPageTest" time="4.3"/>
+  <testcase name="verifyUserCanClickOnLoginLink" classname="com.fbistech.testcases.ContactUsPageTest" time="12.681"/>
+  <testcase name="verifyUserCanclickOnPartnerWithUsLink" classname="com.fbistech.testcases.ContactUsPageTest" time="9.488"/>
+  <testcase name="verifyOfficeAddressIsDisplayed" classname="com.fbistech.testcases.ContactUsPageTest" time="9.081">
+    <failure message="expected [https://beamsity.com/sponsor] but found [https://beamsity.com/contactus]" type="java.lang.AssertionError">java.lang.AssertionError: expected [https://beamsity.com/sponsor] but found [https://beamsity.com/contactus]
+	at com.fbistech.testcases.ContactUsPageTest.verifyOfficeAddressIsDisplayed(ContactUsPageTest.java:247)
+</failure>
+    <system-out><![CDATA[https://beamsity.com/contactus
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 40675
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:23:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserIsOfficePhoneNumberisDisplayed" classname="com.fbistech.testcases.ContactUsPageTest" time="11.134"/>
+  <testcase name="verifyUserCanClickOnAboutUsLink" classname="com.fbistech.testcases.ContactUsPageTest" time="15.862"/>
+  <testcase name="verifyUserCanClickOnPrivacyPolicyLink" classname="com.fbistech.testcases.ContactUsPageTest" time="11.356"/>
+  <testcase name="verifyUserIsRedirectedToGoogleMapNavigation_ClickOnContactAddressLink" classname="com.fbistech.testcases.ContactUsPageTest" time="26.71"/>
+  <testcase name="verifyUserCanSignUpToMailingList" classname="com.fbistech.testcases.ContactUsPageTest" time="30.331">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7fdde878ddb906c806b27000dc4bc135&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7fdde878ddb906c806b27000dc4bc135
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']}
+	at com.fbistech.testcases.ContactUsPageTest.verifyUserCanSignUpToMailingList(ContactUsPageTest.java:403)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 32468
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:25:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom" classname="com.fbistech.testcases.ContactUsPageTest" time="32.279">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d9c9be1e0a2be2a503b730328028fa39&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9c9be1e0a2be2a503b730328028fa39
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.ContactUsPageTest.verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom(ContactUsPageTest.java:433)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 44395
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:26:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail" classname="com.fbistech.testcases.ContactUsPageTest" time="32.438">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1e51af3cd07d787e762f658c0c521f31&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e51af3cd07d787e762f658c0c521f31
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.ContactUsPageTest.verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail(ContactUsPageTest.java:462)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 17968
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:27:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWith_PhoneNumber" classname="com.fbistech.testcases.ContactUsPageTest" time="30.324">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 80156bcc70e1bc7cb385e7b6babb1c6f&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 80156bcc70e1bc7cb385e7b6babb1c6f
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.ContactUsPageTest.verifyUserCannotSignUpToMailingListWith_PhoneNumber(ContactUsPageTest.java:489)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 48903
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:27:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail" classname="com.fbistech.testcases.ContactUsPageTest" time="32.425">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7a8376d00fbd06360f95110502848f41&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a8376d00fbd06360f95110502848f41
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']}
+	at com.fbistech.testcases.ContactUsPageTest.verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail(ContactUsPageTest.java:517)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 19653
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:28:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail" classname="com.fbistech.testcases.ContactUsPageTest" time="32.406">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59008}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0d7b4c273fc5220b403407136a0579fb&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59008}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d7b4c273fc5220b403407136a0579fb
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.ContactUsPageTest.verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail(ContactUsPageTest.java:545)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 44990
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:29:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanClickOnGooglePlayLink" classname="com.fbistech.testcases.ContactUsPageTest" time="21.636"/>
+  <testcase name="verifyUserCanInstallBeamsityApp" classname="com.fbistech.testcases.ContactUsPageTest" time="32.23">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Installed&apos;)]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0d25c7509fe7cbc418bac4504eab95ad&#10;*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Installed&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Installed')]"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d25c7509fe7cbc418bac4504eab95ad
+*** Element info: {Using=xpath, value=//button[contains(text(),'Installed')]}
+	at com.fbistech.testcases.ContactUsPageTest.verifyUserCanInstallBeamsityApp(ContactUsPageTest.java:607)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 35445
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:30:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanClickOnContactUsEmail" classname="com.fbistech.testcases.ContactUsPageTest" time="13.276"/>
+  <testcase name="verifyUserCanClickSchoolsOrganizationsPageLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="4.454"/>
+  <testcase name="verifyUserCanClickOnTeachOnBeamsitykLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="10.451"/>
+  <testcase name="verifyUserCanClickOnContactUsLinks" classname="com.fbistech.testcases.School_OrganizationPageTest" time="21.646"/>
+  <testcase name="verifyUserCanClickOnLoginLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="15.648"/>
+  <testcase name="verifyUserCanclickOnPartnerWithUsLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="10.383"/>
+  <testcase name="verifyUserCanClickOnGetStartedLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="20.139">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;ant-btn started&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 286ec51a160af36501593371c583094f&#10;*** Element info: {Using=xpath, value=//button[@class=&apos;ant-btn started&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ant-btn started']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 286ec51a160af36501593371c583094f
+*** Element info: {Using=xpath, value=//button[@class='ant-btn started']}
+	at com.fbistech.testcases.School_OrganizationPageTest.verifyUserCanClickOnGetStartedLink(School_OrganizationPageTest.java:230)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 47159
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:34:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanClickOnGooglePlayLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="24.611"/>
+  <testcase name="verifyUserCanClickOnAboutUsLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="17.333"/>
+  <testcase name="verifyUserCanClickOnPrivacyPolicyLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="14.927"/>
+  <testcase name="verifyUserIsRedirectedToGoogleMapNavigation_ClickOnContactAddressLink" classname="com.fbistech.testcases.School_OrganizationPageTest" time="29.832"/>
+  <testcase name="verifyUserCanSignUpToMailingList" classname="com.fbistech.testcases.School_OrganizationPageTest" time="30.289">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f5a0b0ac39b17a51436476c971b0bdb9&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f5a0b0ac39b17a51436476c971b0bdb9
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']}
+	at com.fbistech.testcases.School_OrganizationPageTest.verifyUserCanSignUpToMailingList(School_OrganizationPageTest.java:406)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 34638
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:36:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom" classname="com.fbistech.testcases.School_OrganizationPageTest" time="32.286">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59490}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4e444efaecdbae41952765d9ea7542da&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59490}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e444efaecdbae41952765d9ea7542da
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.School_OrganizationPageTest.verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom(School_OrganizationPageTest.java:433)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 40265
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:37:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail" classname="com.fbistech.testcases.School_OrganizationPageTest" time="32.276">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2de3097522b72f7932b0e90b85f066ad&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2de3097522b72f7932b0e90b85f066ad
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.School_OrganizationPageTest.verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail(School_OrganizationPageTest.java:461)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 47977
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:38:14 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWith_PhoneNumber" classname="com.fbistech.testcases.School_OrganizationPageTest" time="30.252">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d97eb9a575b8f79835a513ef3b632887&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d97eb9a575b8f79835a513ef3b632887
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.School_OrganizationPageTest.verifyUserCannotSignUpToMailingListWith_PhoneNumber(School_OrganizationPageTest.java:487)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 39394
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:39:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail" classname="com.fbistech.testcases.School_OrganizationPageTest" time="32.288">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 963f4846415720ef5bf18eb29385d377&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 963f4846415720ef5bf18eb29385d377
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']}
+	at com.fbistech.testcases.School_OrganizationPageTest.verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail(School_OrganizationPageTest.java:513)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 27316
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:39:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail" classname="com.fbistech.testcases.School_OrganizationPageTest" time="32.248">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59605}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 33ebad97cd7846e36be9e0e32c53a50f&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59605}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33ebad97cd7846e36be9e0e32c53a50f
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.School_OrganizationPageTest.verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail(School_OrganizationPageTest.java:540)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 7341
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:40:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanInstallBeamsityApp" classname="com.fbistech.testcases.School_OrganizationPageTest" time="32.769">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Installed&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8bcbec45bcae45fa9553dff5f9bbc6f4&#10;*** Element info: {Using=xpath, value=//button[normalize-space()=&apos;Installed&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Installed']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bcbec45bcae45fa9553dff5f9bbc6f4
+*** Element info: {Using=xpath, value=//button[normalize-space()='Installed']}
+	at com.fbistech.testcases.School_OrganizationPageTest.verifyUserCanInstallBeamsityApp(School_OrganizationPageTest.java:564)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 41340
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:41:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanClickOnContactUsEmail" classname="com.fbistech.testcases.School_OrganizationPageTest" time="19.594"/>
+  <testcase name="verifyUserCanClickOnLoginLink" classname="com.fbistech.testcases.Privacy_PolicyPageTest" time="15.246"/>
+  <testcase name="verifyUserCanClickSchoolsOrganizationsPageLink" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="13.352"/>
+  <testcase name="verifyUserCanClickOnTeachOnBeamsitykLink" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="5.424"/>
+  <testcase name="verifyUserCanClickOnContactUsLinks" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="11.111"/>
+  <testcase name="verifyUserCanClickOnLoginLink" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="11.746"/>
+  <testcase name="verifyUserCanclickOnPartnerWithUsLink" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="10.316"/>
+  <testcase name="verifyUserCanClickOnGetStartedLink" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="10.538"/>
+  <testcase name="verifyUserCanClickOnAboutUsLink" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="18.212"/>
+  <testcase name="verifyUserCanClickOnPrivacyPolicyLink" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="14.289"/>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="40.005">
+    <failure message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 19.174
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e4a16ccafa20f921e7e8e594ea3e18dc
+	at com.fbistech.testcases.TechOnBeamsityPageTest.setUp(TechOnBeamsityPageTest.java:48)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 42171
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:46:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1636364811.362][SEVERE]: Timed out receiving message from renderer: 19.174
+[1636364811.363][SEVERE]: Timed out receiving message from renderer: 19.174
+]]></system-err>
+  </testcase>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyUserIsRedirectedToGoogleMapNavigation_ClickOnContactAddressLink" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyUserCanSignUpToMailingList" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWith_PhoneNumber" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="verifyUserCanInstallBeamsityApp" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="verifyUserCanClickOnContactUsEmail" classname="com.fbistech.testcases.TechOnBeamsityPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 19.174&#10;  (Session info: chrome=95.0.4638.69)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:59956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e4a16ccafa20f921e7e8e594ea3e18dc"/>
+  </testcase>
+  <testcase name="verifyHomePageTitleTest" classname="com.fbistech.testcases.HomePageTest" time="0.003"/>
+  <testcase name="validateBeamsityLogo" classname="com.fbistech.testcases.HomePageTest" time="0.041"/>
+  <testcase name="verifyUserCanClickOnSchools_OrganizationsLinkLink" classname="com.fbistech.testcases.HomePageTest" time="4.648"/>
+  <testcase name="verifyUserCanClickOnTeachOnBeamsitykLink" classname="com.fbistech.testcases.HomePageTest" time="0.391"/>
+  <testcase name="verifyUserCanClickOnContactUsLinks" classname="com.fbistech.testcases.HomePageTest" time="17.298"/>
+  <testcase name="verifyUserCanClickOnLoginLink" classname="com.fbistech.testcases.HomePageTest" time="2.799"/>
+  <testcase name="verifyUserCanclickOnPartnerWithUsLink" classname="com.fbistech.testcases.HomePageTest" time="0.267"/>
+  <testcase name="verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromSchoolsOrganizationsPage" classname="com.fbistech.testcases.HomePageTest" time="13.972"/>
+  <testcase name="verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromTechOnBeamsityPage" classname="com.fbistech.testcases.HomePageTest" time="11.661"/>
+  <testcase name="verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromContactUsPage" classname="com.fbistech.testcases.HomePageTest" time="9.412"/>
+  <testcase name="verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromPartnerWithUsPage" classname="com.fbistech.testcases.HomePageTest" time="9.437"/>
+  <testcase name="verifyUserCanClickOnGetStartedLink" classname="com.fbistech.testcases.HomePageTest" time="25.137"/>
+  <testcase name="verifyUserCanClickOnLearnMoreLink" classname="com.fbistech.testcases.HomePageTest" time="4.371"/>
+  <testcase name="verifyUserIsRedirectedToHomePageOnClickBeamsityLogo_AboutUsFooter" classname="com.fbistech.testcases.HomePageTest" time="16.998"/>
+  <testcase name="verifyUserIsRedirectedToHomePageOnClickBeamsityLogo_PrivatePolicyFooter" classname="com.fbistech.testcases.HomePageTest" time="13.403"/>
+  <testcase name="verifyUserCanClickOnAboutUsLink" classname="com.fbistech.testcases.HomePageTest" time="7.453"/>
+  <testcase name="verifyUserCanClickOnPrivacyPolicyLink" classname="com.fbistech.testcases.HomePageTest" time="7.318"/>
+  <testcase name="verifyUserIsRedirectedToGoogleMapNavigation_ClickOnContactAddressLink" classname="com.fbistech.testcases.HomePageTest" time="14.107"/>
+  <testcase name="verifyUserCanSignUpToMailingList" classname="com.fbistech.testcases.HomePageTest" time="21.282">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60469}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b4287bc3bee3c3aa97c1445c1e49cf51&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60469}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4287bc3bee3c3aa97c1445c1e49cf51
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']}
+	at com.fbistech.testcases.HomePageTest.verifyUserCanSignUpToMailingList(HomePageTest.java:612)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 27267
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:53:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom" classname="com.fbistech.testcases.HomePageTest" time="21.213">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6dd3b6f1e63fbc213a48f3565e8476b9&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6dd3b6f1e63fbc213a48f3565e8476b9
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.HomePageTest.verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom(HomePageTest.java:637)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 1744
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:53:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail" classname="com.fbistech.testcases.HomePageTest" time="21.171">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60529}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 683973fc406b79fccd2d1a2763238355&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60529}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 683973fc406b79fccd2d1a2763238355
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.HomePageTest.verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail(HomePageTest.java:662)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 39414
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:54:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotSignUpToMailingListWith_PhoneNumber" classname="com.fbistech.testcases.HomePageTest" time="21.213">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c47a13f7fa93cbdc97bcb951ab23d794&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c47a13f7fa93cbdc97bcb951ab23d794
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.HomePageTest.verifyUserCannotSignUpToMailingListWith_PhoneNumber(HomePageTest.java:686)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 10557
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:55:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail" classname="com.fbistech.testcases.HomePageTest" time="21.205">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6c7de70138e7e4ff99966e2ae6cc921c&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__title css-14esyki&apos;][normalize-space()=&apos;Success.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c7de70138e7e4ff99966e2ae6cc921c
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__title css-14esyki'][normalize-space()='Success.']}
+	at com.fbistech.testcases.HomePageTest.verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail(HomePageTest.java:709)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 48221
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:55:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail" classname="com.fbistech.testcases.HomePageTest" time="21.155">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60619}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 990916855b84103616e2d4bf7fd03bcf&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@class=&apos;chakra-alert__desc css-2xkhb3&apos;][normalize-space()=&apos;The email must be a valid email address.&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60619}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 990916855b84103616e2d4bf7fd03bcf
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-2xkhb3'][normalize-space()='The email must be a valid email address.']}
+	at com.fbistech.testcases.HomePageTest.verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail(HomePageTest.java:733)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 28269
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:56:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanClickOnGooglePlayLink" classname="com.fbistech.testcases.HomePageTest" time="18.483"/>
+  <testcase name="verifyUserCanInstallBeamsityApp" classname="com.fbistech.testcases.HomePageTest" time="22.139">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Installed&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f80cea02c5c7b1f4c76483ebabca5013&#10;*** Element info: {Using=xpath, value=//button[normalize-space()=&apos;Installed&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Installed']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:60686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f80cea02c5c7b1f4c76483ebabca5013
+*** Element info: {Using=xpath, value=//button[normalize-space()='Installed']}
+	at com.fbistech.testcases.HomePageTest.verifyUserCanInstallBeamsityApp(HomePageTest.java:786)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 4567
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 10:57:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanClickOnContactUsEmail" classname="com.fbistech.testcases.HomePageTest" time="7.312"/>
+  <testcase name="verifyUserCanClickOnLoginLink" classname="com.fbistech.testcases.LoginPageTest" time="7.129"/>
+  <testcase name="verifyUserCanLoginWith_ValideCredentials" classname="com.fbistech.testcases.LoginPageTest" time="35.64"/>
+  <testcase name="verifyUserCannotLoginWith_InvalideCredentials" classname="com.fbistech.testcases.LoginPageTest" time="16.918"/>
+  <testcase name="verifyUserCannotLoginWith_ValidEmail_InvalidPassword" classname="com.fbistech.testcases.LoginPageTest" time="25.585"/>
+  <testcase name="verifyUserCannotLoginWith_InvalidEmail_ValidPassword" classname="com.fbistech.testcases.LoginPageTest" time="23.041"/>
+  <testcase name="verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword" classname="com.fbistech.testcases.LoginPageTest" time="20.825"/>
+  <testcase name="verifyUserCannotLoginWith_EmptyEmail_AndValidPassword" classname="com.fbistech.testcases.LoginPageTest" time="20.383"/>
+  <testcase name="verifyUserCannotLoginWith_ValidEmail_EmptyPassword" classname="com.fbistech.testcases.LoginPageTest" time="22.269"/>
+  <testcase name="verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters" classname="com.fbistech.testcases.LoginPageTest" time="15.729"/>
+  <testcase name="verifyUserCanClickForgotPasswordLink" classname="com.fbistech.testcases.LoginPageTest" time="6.218"/>
+  <testcase name="verifyUserCanTerminateForgotPasswordProcess" classname="com.fbistech.testcases.LoginPageTest" time="10.273"/>
+  <testcase name="verifyUserCanResetForgetPassword" classname="com.fbistech.testcases.LoginPageTest" time="16.89"/>
+  <testcase name="verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName" classname="com.fbistech.testcases.LoginPageTest" time="29.247">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@id=&apos;12&apos;]//*[@class=&apos;chakra-icon css-onkibi&apos;]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:61152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 467fe402050689f1ddad85d4a7fe7847&#10;*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@id=&apos;12&apos;]//*[@class=&apos;chakra-icon css-onkibi&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:61152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 467fe402050689f1ddad85d4a7fe7847
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']}
+	at com.fbistech.testcases.LoginPageTest.verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName(LoginPageTest.java:639)
+</failure>
+    <system-out><![CDATA[https://portal.beamsity.com/auth/forgot_password
+Forgot Password
+The email must be a valid email address.
+The selected email is invalid.
+true
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 7354
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 11:04:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName" classname="com.fbistech.testcases.LoginPageTest" time="15.467"/>
+  <testcase name="verifyUserCannotResetForgetPasswordWithEmptyInputField" classname="com.fbistech.testcases.LoginPageTest" time="17.989"/>
+  <testcase name="verifyUserCanNavigateToTermsAndConditionsPage" classname="com.fbistech.testcases.LoginPageTest" time="4.683"/>
+  <testcase name="verifyUserCanClickOnTermsAndConditionsLink" classname="com.fbistech.testcases.LoginPageTest" time="4.685"/>
+  <testcase name="verifyUserCanClickCompanyLink" classname="com.fbistech.testcases.CompanyPageTest" time="10.038">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot; //a[contains(text(),&apos;Company&apos;)]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:61325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2a87c0173cdaa4ab4a4f99e229bea1d&#10;*** Element info: {Using=xpath, value= //a[contains(text(),&apos;Company&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":" //a[contains(text(),'Company')]"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:61325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2a87c0173cdaa4ab4a4f99e229bea1d
+*** Element info: {Using=xpath, value= //a[contains(text(),'Company')]}
+	at com.fbistech.testcases.CompanyPageTest.verifyUserCanClickCompanyLink(CompanyPageTest.java:41)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 29764
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 11:06:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanClickSubscribeLink" classname="com.fbistech.testcases.SubscribePageTest" time="10.039">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Subscribe&apos;)]&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:78f3:817:ce4d:13ab%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_301&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:61363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 29cc278a4ef664d08d73a47ab9dd5f6d&#10;*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Subscribe&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Subscribe')]"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:78f3:817:ce4d:13ab%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:61363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 29cc278a4ef664d08d73a47ab9dd5f6d
+*** Element info: {Using=xpath, value=//a[contains(text(),'Subscribe')]}
+	at com.fbistech.testcases.SubscribePageTest.verifyUserCanClickSubscribeLink(SubscribePageTest.java:41)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 25617
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2021 11:07:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

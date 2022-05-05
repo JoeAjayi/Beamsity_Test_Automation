@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.fbistech.testcases.School_OrganizationPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyUserCanSignUpToMailingList"/>
+          <include name="verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom"/>
+          <include name="verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail"/>
+          <include name="verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail"/>
+          <include name="setUp"/>
+          <include name="verifyUserCannotSignUpToMailingListWith_PhoneNumber"/>
+          <include name="verifyUserCanInstallBeamsityApp"/>
+          <include name="verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail"/>
+        </methods>
+      </class> <!-- com.fbistech.testcases.School_OrganizationPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

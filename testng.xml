@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.fbistech.testcases.SponsorPageTest"/>
+      <class name="com.fbistech.testcases.SubscribePageTest"/>
+      <class name="com.fbistech.testcases.HomePageTest"/>
+      <class name="com.fbistech.testcases.SignupPageTest"/>
+      <class name="com.fbistech.testcases.PartnerWithUsPageTest"/>
+      <class name="com.fbistech.testcases.ContactUsPageTest"/>
+      <class name="com.fbistech.testcases.TutorPageTest"/>
+      <class name="com.fbistech.testcases.LoginPageTest"/>
+      <class name="com.fbistech.testcases.TechOnBeamsityPageTest"/>
+      <class name="com.fbistech.testcases.CompanyPageTest"/>
+      <class name="com.fbistech.testcases.Privacy_PolicyPageTest"/>
+      <class name="com.fbistech.testcases.CoursesPageTest"/>
+      <class name="com.fbistech.testcases.School_OrganizationPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

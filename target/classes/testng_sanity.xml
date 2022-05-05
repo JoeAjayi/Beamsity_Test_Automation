@@ -1,0 +1,21 @@
+<?xml version-"1.0" encoding-"UTF-8"?>
+<!DOCTYPE suite SYSTEM	"http://testng.org/testng-1.0.dtd">
+<suite name-"Beamsity Apllication Test Automation Test Suite">
+	<test name-"Beamsity App Test Cases">
+		<classes>
+			
+		<class name- "com.fbistech.testcases.CoursesPageTest"></class>
+			<class name- "com.fbistech.testcases.HomePageTest"></class>
+			<class name- "com.fbistech.testcases.LoginPageTest"></class>
+			<class name- "com.fbistech.testcases.School_OrganizationPageTest"></class>
+			<class name- "com.fbistech.testcases.SignupPageTest"></class>
+			<class name- "com.fbistech.testcases.SponsorPageTest"></class>
+			<class name- "com.fbistech.testcases.SubscribePageTest"></class>
+			<class name- "com.fbistech.testcases.TutorPageTest"></class>
+		</classes>
+	</test>
+</suite>
+
+
+			
+			
