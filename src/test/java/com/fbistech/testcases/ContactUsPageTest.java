@@ -73,7 +73,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady=true)
-	@Test(priority = 1) 
+//	@Test(priority = 1) 
 	public void verifyUserCanClickSchools_OrganizationsPageLink() throws Exception
 	{
 		Thread.sleep(4000);
@@ -84,18 +84,18 @@ public class ContactUsPageTest extends TestBase {
 		
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://beamsity.com/organization", "URL does not matched");
+		Assert.assertEquals(url, "https://beamsity.com/organization", "URL does not matched");
 		
 		
 //		<--- Validating BeamSity for Organizations context is display and running two layers of assertion ---->
 		String pageNamelabel = contactUsPage.validateCorrectSchools_OrganizationsPageName();
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "BeamSity for Organizations", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "BeamSity for Organizations", "Text displayed does not matched");
 		
 		
 		boolean text = driver.getPageSource().contains("BeamSity for Organizations");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 	}
 	
 	
@@ -105,7 +105,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void verifyUserCanClickOnTeachOnBeamsitykLink() throws Exception
 	{
 		Thread.sleep(4000);
@@ -115,17 +115,17 @@ public class ContactUsPageTest extends TestBase {
 	
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://beamsity.com/become_a_tutor", "URL does not matched");
+		Assert.assertEquals(url, "https://beamsity.com/become_a_tutor", "URL does not matched");
 		
 	//	<--- Validating Make an Impact context is display and running two layers of assertion ---->
 		
 		String pageNamelabel = contactUsPage.validateCorrectTeachOnBeamsityPageName();
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "Make an Impact", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Make an Impact", "Text displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("Make an Impact");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 	}
 	
 	
@@ -135,7 +135,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady=true)
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void verifyUserCanClickOnContactUsLinks() throws Exception
 	{	
 		Thread.sleep(4000);
@@ -144,22 +144,22 @@ public class ContactUsPageTest extends TestBase {
 //	<-----	Assertion on contact us url ------>
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://beamsity.com/contactus", "URL does not matched");
+		Assert.assertEquals(url, "https://beamsity.com/contactus", "URL does not matched");
 		
 //	<----- Validating Contact Us! text is display and running two layers of assertion ---->
 		
 		String pageNamelabel1 = contactUsPage.validateCorrectContactUsPageName();
 		System.out.println(pageNamelabel1);
-		AssertJUnit.assertEquals(pageNamelabel1, "Contact Us!", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel1, "Contact Us!", "Text displayed does not matched");
 		
 		
 		String pageNamelabel2 = contactUsPage.validateCorrectContactUsFooterName();
 		System.out.println(pageNamelabel2);
-		AssertJUnit.assertEquals(pageNamelabel2, "CONTACT US", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel2, "CONTACT US", "Text displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("Contact Us!");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 	}
 	
 	
@@ -169,7 +169,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 4)
+//	@Test(priority = 4)
 	public void verifyUserCanClickOnLoginLink() throws Exception
 	{
 		Thread.sleep(4000);
@@ -186,7 +186,7 @@ public class ContactUsPageTest extends TestBase {
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		
 		
 //		<--- Validating login text is display and running two layers of assertion ---->
@@ -194,11 +194,11 @@ public class ContactUsPageTest extends TestBase {
 		
 		String pageNamelabel = contactUsPage.validateCorrectLoginPageName();
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("Log In");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 	}
 	
 	
@@ -208,7 +208,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 5)
+//	@Test(priority = 5)
 	public void verifyUserCanclickOnPartnerWithUsLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -218,17 +218,17 @@ public class ContactUsPageTest extends TestBase {
 	
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://beamsity.com/sponsor");
+		Assert.assertEquals(url, "https://beamsity.com/sponsor");
 		
 //		<--- Validating partner with us text is display and running 2 layers of assertion ---->
 		
 		String pageNamelabel = contactUsPage.validateCorrectPartnerWithUsPageName();
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "Partner with us today", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Partner with us today", "Text displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("Partner with us today");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 	}
 	
 	
@@ -238,7 +238,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 6)
+//	@Test(priority = 6)
 	public void verifyOfficeAddressIsDisplayed() throws Exception
 	{
 		Thread.sleep(5000);
@@ -248,17 +248,17 @@ public class ContactUsPageTest extends TestBase {
 	
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://beamsity.com/sponsor");
+		Assert.assertEquals(url, "https://beamsity.com/sponsor");
 		
 //		<--- Validating partner with us text is display and running 2 layers of assertion ---->
 		
 		String pageNamelabel = contactUsPage.validateCorrectPartnerWithUsPageName();
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "Partner with us today", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Partner with us today", "Text displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("Partner with us today");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 	}
 	
 	
@@ -269,7 +269,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 7)
+//	@Test(priority = 7)
 	public void verifyUserIsOfficePhoneNumberisDisplayed() throws Exception
 	{
 		Thread.sleep(4000); 
@@ -278,13 +278,13 @@ public class ContactUsPageTest extends TestBase {
 		
 //		<--- Validating office phone number is displayed and and running a layer of assertion ----> 
 		String phoneNumberLabel = contactUsPage.validateCorrectContactOfficePhoneNumber();
-		AssertJUnit.assertEquals(phoneNumberLabel, "+234(0)8032036876");
+		Assert.assertEquals(phoneNumberLabel, "+234(0)8032036876");
 		System.out.println(phoneNumberLabel);
 
 		
 //		<--- Validating office address text is display on the footer and running a layer of assertion ---->
 		boolean text = driver.getPageSource().contains("+234(0)8032036876");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 	}
 	
@@ -295,7 +295,7 @@ public class ContactUsPageTest extends TestBase {
 
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 8)
+//	@Test(priority = 8)
 	public void verifyUserCanClickOnAboutUsLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -306,17 +306,17 @@ public class ContactUsPageTest extends TestBase {
 		
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://beamsity.com/about_us", "URL does not matched");
+		Assert.assertEquals(url, "https://beamsity.com/about_us", "URL does not matched");
 		
 //		<--- Validating Make an Impact context is display and running two layers of assertion ---->	
 		
 		String pageNamelabel = contactUsPage.validateCorrectAboutUsFooterName();
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "About Us", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "About Us", "Text displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("About Us");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);	
+		Assert.assertTrue(text);	
 	}
 	
 
@@ -338,17 +338,17 @@ public class ContactUsPageTest extends TestBase {
 		
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://beamsity.com/privacy_policy", "URL does not matched");
+		Assert.assertEquals(url, "https://beamsity.com/privacy_policy", "URL does not matched");
 		
 //		<--- Validating Make an Impact context is display and running two layers of assertion ---->
 		
 		String pageNamelabel = contactUsPage.validateCorrectPrivacyPolicyFooterName();
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "Privacy Policy", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Privacy Policy", "Text displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("Privacy Policy");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 	}
 	
 
@@ -359,7 +359,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 10)
+//	@Test(priority = 10)
 	public void verifyUserIsRedirectedToGoogleMapNavigation_ClickOnContactAddressLink() throws Exception
 	{
 		Thread.sleep(4000); 
@@ -370,7 +370,7 @@ public class ContactUsPageTest extends TestBase {
 		
 //		<--- Validating office address text is display on the footer and running a layer of assertion ---->
 		boolean text = driver.getPageSource().contains("50, Awolowo Road Ikoyi lagos, Nigeria.");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 
 		
@@ -384,7 +384,7 @@ public class ContactUsPageTest extends TestBase {
 //		<--- Validating office address text is display on google map and running a layer of assertion ---->
 		String footerNamelabel = contactUsPage.validateCorrectGoogleMapContactUsOfficeAddress();
 		System.out.println(footerNamelabel);
-		AssertJUnit.assertEquals(footerNamelabel, "50 Awolowo Rd, Ikoyi 106104, Lagos", " The address displayed does not matched");
+		Assert.assertEquals(footerNamelabel, "50 Awolowo Rd, Ikoyi 106104, Lagos", " The address displayed does not matched");
 	}
 	
 	
@@ -394,7 +394,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 11)
+//	@Test(priority = 11)
 	public void verifyUserCanSignUpToMailingList() throws Exception
 	{
 		Thread.sleep(5000);
@@ -405,13 +405,13 @@ public class ContactUsPageTest extends TestBase {
 //		<--- Validating SignUp To Mailing List success and running two layers of assertion ---->
 		Thread.sleep(3000);
 		String successPrompt = contactUsPage.validateSignUpToMailingListSuccessPrompt();
-		AssertJUnit.assertEquals(successPrompt, "Success.", "Text displayed does not matched");
+		Assert.assertEquals(successPrompt, "Success.", "Text displayed does not matched");
 		System.out.println(successPrompt);
 			 
 			
 		boolean successPromptText = driver.getPageSource().contains("Success.");
 	//	Assert.assertEquals(pageNamelText, true);
-		AssertJUnit.assertTrue(successPromptText);
+		Assert.assertTrue(successPromptText);
 		System.out.println(successPromptText);
 	}
 
@@ -423,7 +423,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	 
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 12)
+//	@Test(priority = 12)
 	public void verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom() throws Exception
 	{
 		Thread.sleep(5000);
@@ -435,13 +435,13 @@ public class ContactUsPageTest extends TestBase {
 //		<--- Validating SignUp To Mailing List success and running two layers of assertion ---->
 		
 		String invalidEmailErrorPrompt = contactUsPage.validateSignUpToMailingListInvalidEmailErrorPrompt();
-		AssertJUnit.assertEquals(invalidEmailErrorPrompt, "The email must be a valid email address.", "Text displayed does not matched");
+		Assert.assertEquals(invalidEmailErrorPrompt, "The email must be a valid email address.", "Text displayed does not matched");
 		System.out.println(invalidEmailErrorPrompt);
 
 			
 		boolean InvalidEmailErrorPrompt = driver.getPageSource().contains("The email must be a valid email address.");
 	//	Assert.assertEquals(pageNamelText, true);
-		AssertJUnit.assertTrue(InvalidEmailErrorPrompt);
+		Assert.assertTrue(InvalidEmailErrorPrompt);
 		System.out.println(InvalidEmailErrorPrompt);
 	}
 
@@ -452,7 +452,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 13)
+//	@Test(priority = 13)
 	public void verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -464,12 +464,12 @@ public class ContactUsPageTest extends TestBase {
 //		<--- Validating SignUp To Mailing List invalid email error prompt and running two layers of assertion ---->
 		
 		String invalidEmailErrorPrompt = contactUsPage.validateSignUpToMailingListInvalidEmailErrorPrompt();
-		AssertJUnit.assertEquals(invalidEmailErrorPrompt, "The email must be a valid email address.", "Text displayed does not matched");
+		Assert.assertEquals(invalidEmailErrorPrompt, "The email must be a valid email address.", "Text displayed does not matched");
 		System.out.println(invalidEmailErrorPrompt);
 			 
 		boolean inValidEmailErrorPrompt = driver.getPageSource().contains("The email must be a valid email address.");
 	//	Assert.assertEquals(pageNamelText, true);
-		AssertJUnit.assertTrue(inValidEmailErrorPrompt);
+		Assert.assertTrue(inValidEmailErrorPrompt);
 		System.out.println(inValidEmailErrorPrompt);
 	}
 	
@@ -480,7 +480,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 14)
+//	@Test(priority = 14)
 	public void verifyUserCannotSignUpToMailingListWith_PhoneNumber() throws Exception
 	{
 		Thread.sleep(5000);
@@ -492,12 +492,12 @@ public class ContactUsPageTest extends TestBase {
 		
 		String invalidEmailErrorPrompt = contactUsPage.validateSignUpToMailingListInvalidEmailErrorPrompt();
 		System.out.println(invalidEmailErrorPrompt);
-		AssertJUnit.assertEquals(invalidEmailErrorPrompt, "The email must be a valid email address.", "Text displayed does not matched");
+		Assert.assertEquals(invalidEmailErrorPrompt, "The email must be a valid email address.", "Text displayed does not matched");
 			 
 		boolean InvalidEmailErrorPrompt = driver.getPageSource().contains("The email must be a valid email address.");
 		System.out.println(InvalidEmailErrorPrompt);
 	//	Assert.assertEquals(pageNamelText, true);
-		AssertJUnit.assertTrue(InvalidEmailErrorPrompt);
+		Assert.assertTrue(InvalidEmailErrorPrompt);
 	}
 	
 	
@@ -507,7 +507,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 15)
+//	@Test(priority = 15)
 	public void verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -519,12 +519,12 @@ public class ContactUsPageTest extends TestBase {
 //		<--- Validating SignUp To Mailing List Success prompt and running two layers of assertion ---->
 		
 		String signUpMailingListSuccessPrompt = contactUsPage.validateSignUpToMailingListSuccessPrompt();
-		AssertJUnit.assertEquals(signUpMailingListSuccessPrompt, "Success.", "Text displayed does not matched");
+		Assert.assertEquals(signUpMailingListSuccessPrompt, "Success.", "Text displayed does not matched");
 		System.out.println(signUpMailingListSuccessPrompt);
 		
 		boolean InvalidEmailErrorPrompt = driver.getPageSource().contains("Success.");
 	//	Assert.assertEquals(pageNamelText, true);
-		AssertJUnit.assertTrue(InvalidEmailErrorPrompt);
+		Assert.assertTrue(InvalidEmailErrorPrompt);
 		System.out.println(InvalidEmailErrorPrompt);
 	}
 	
@@ -535,7 +535,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 16)
+//	@Test(priority = 16)
 	public void verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -547,13 +547,13 @@ public class ContactUsPageTest extends TestBase {
 //		<--- Validating SignUp To Mailing List invalid email error prompt and running two layers of assertion ---->
 		
 		String invalidEmailErrorPrompt = contactUsPage.validateSignUpToMailingListInvalidEmailErrorPrompt();
-		AssertJUnit.assertEquals(invalidEmailErrorPrompt, "The email must be a valid email address.", "Text displayed does not matched");
+		Assert.assertEquals(invalidEmailErrorPrompt, "The email must be a valid email address.", "Text displayed does not matched");
 		System.out.println(invalidEmailErrorPrompt);
 
 		
 		boolean InvalidEmailErrorPrompt = driver.getPageSource().contains("The email must be a valid email address.");
 	//	Assert.assertEquals(pageNamelText, true);
-		AssertJUnit.assertTrue(InvalidEmailErrorPrompt);
+		Assert.assertTrue(InvalidEmailErrorPrompt);
 		System.out.println(InvalidEmailErrorPrompt);
 	}
 	
@@ -564,7 +564,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 17)
+//	@Test(priority = 17)
 	public void verifyUserCanClickOnGooglePlayLink() throws Exception
 	{
 		Thread.sleep(4000);
@@ -582,17 +582,17 @@ public class ContactUsPageTest extends TestBase {
 //		<--- Validating Google play button and running three layers of assertion ---->
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://play.google.com/store/apps/details?id=com.fbistech.beamsity", "URL does not matched");
+		Assert.assertEquals(url, "https://play.google.com/store/apps/details?id=com.fbistech.beamsity", "URL does not matched");
 		
 		
 		
 		String pageNamelabel = contactUsPage.validateCorrectGooglePlayPageName();
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "BeamSity", " Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "BeamSity", " Text displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("BeamSity");
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);	
+		Assert.assertTrue(text);	
 	}
 	
 	
@@ -602,7 +602,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 18)
+//	@Test(priority = 18)
 	public void verifyUserCanInstallBeamsityApp() throws Exception
 	{
 		Thread.sleep(5000);
@@ -618,18 +618,18 @@ public class ContactUsPageTest extends TestBase {
 				
 //		<---- Validating Google play button and running three layers of assertion ---->
 		String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://play.google.com/store/apps/details?id=com.fbistech.beamsity", "The URL does not matched");
+		Assert.assertEquals(url, "https://play.google.com/store/apps/details?id=com.fbistech.beamsity", "The URL does not matched");
 		System.out.println(url);
 
 		
 		String footerNameLabel = contactUsPage.validateCorrectGooglePlayPageName();
-		AssertJUnit.assertEquals(footerNameLabel, "BeamSity", "Text displayed does not matched");
+		Assert.assertEquals(footerNameLabel, "BeamSity", "Text displayed does not matched");
 		System.out.println(footerNameLabel);
  
 			
 		boolean pageNamelText = driver.getPageSource().contains("BeamSity");
 	//	Assert.assertEquals(pageNamelText, true);
-		AssertJUnit.assertTrue(pageNamelText);	
+		Assert.assertTrue(pageNamelText);	
 		System.out.println(pageNamelText);
 	}
 	
@@ -640,7 +640,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 19)
+//	@Test(priority = 19)
 	public void verifyUserCanClickOnContactUsEmail() throws Exception
 	{
 		Thread.sleep(3000);
@@ -662,16 +662,16 @@ public class ContactUsPageTest extends TestBase {
 		
 		
 		String pageNamelabel = contactUsPage.validateCorrectEmailAddressName();
+		Assert.assertEquals(pageNamelabel, "info@beamsity.com", " Email Address displayed does not matched");
 		System.out.println(pageNamelabel);
-		AssertJUnit.assertEquals(pageNamelabel, "info@beamsity.com", " Email Address displayed does not matched");
 		
 		boolean text = driver.getPageSource().contains("info@beamsity.com");
+		Assert.assertTrue(text);	
 		System.out.println(text);
-		AssertJUnit.assertTrue(text);	
 	}
 	
 	
-	
+	 
 	
 	
 	

@@ -3,19 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.fbistech.testcases.School_OrganizationPageTest">
+      <class name="com.fbistech.testcases.ContactUsPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyUserCanSignUpToMailingList"/>
-          <include name="verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom"/>
-          <include name="verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail"/>
-          <include name="verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail"/>
           <include name="setUp"/>
-          <include name="verifyUserCannotSignUpToMailingListWith_PhoneNumber"/>
-          <include name="verifyUserCanInstallBeamsityApp"/>
-          <include name="verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail"/>
+          <include name="verifyUserCanClickOnPrivacyPolicyLink"/>
         </methods>
-      </class> <!-- com.fbistech.testcases.School_OrganizationPageTest -->
+      </class> <!-- com.fbistech.testcases.ContactUsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

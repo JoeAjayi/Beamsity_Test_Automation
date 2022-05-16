@@ -2,6 +2,7 @@ package com.fbistech.testcases;
 
 import java.util.ArrayList;
 
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -75,7 +76,7 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running a layer of assertion ---->
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		System.out.println(url);
 
 		
@@ -83,11 +84,11 @@ public class LoginPageTest extends TestBase{
 		
 		
 		String pageNamelabel = loginPage.validateCorrectLoginPageName();
-		AssertJUnit.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
 		System.out.println(pageNamelabel);
 
 		boolean text = driver.getPageSource().contains("Log In");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 
 	}
@@ -116,17 +117,17 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating user can successfully login and running an assertion ---->
 		String loginPrompt = loginPage.validateLoginSuccessPrompt();
-		AssertJUnit.assertEquals(loginPrompt, "Success.", "Text displayed does not matched");
+		Assert.assertEquals(loginPrompt, "Success.", "Text displayed does not matched");
 		System.out.println(loginPrompt);
 		
 		boolean text = driver.getPageSource().contains("Success.");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 		
 //      <---- Validating login URL and running an assertion ---->
         Thread.sleep(10000);
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/school/dashboard", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/school/dashboard", "URL does not matched");
 		System.out.println(url);		
 	}
 	
@@ -154,18 +155,18 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		System.out.println(url);
 
  
 //      <--- Validating user can successfully login and running an assertion ---->
   
 		String invalidLoginPrompt = loginPage.validateLoginInvalidCredentialsEntered();
-		AssertJUnit.assertEquals(invalidLoginPrompt, "Invalid credentials entered", "Text displayed does not matched");
+		Assert.assertEquals(invalidLoginPrompt, "Invalid credentials entered", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);
 
 		boolean text = driver.getPageSource().contains("Invalid credentials entered");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 		
 		Thread.sleep(1000);
@@ -198,22 +199,22 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		System.out.println(url);
 
  
 		String pageNamelabel = loginPage.validateCorrectLoginPageName();
-		AssertJUnit.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
 		System.out.println(pageNamelabel);
 		
 //      <--- Validating user can successfully login and running an assertion ---->
   
 		String invalidLoginPrompt = loginPage.validateLoginInvalidCredentialsEntered();
-		AssertJUnit.assertEquals(invalidLoginPrompt, "Invalid credentials entered", "Text displayed does not matched");
+		Assert.assertEquals(invalidLoginPrompt, "Invalid credentials entered", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);
 
 		boolean text = driver.getPageSource().contains("Invalid credentials entered");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 	
 
@@ -247,28 +248,28 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		System.out.println(url);
 
  
 		String pageNamelabel = loginPage.validateCorrectLoginPageName();
-		AssertJUnit.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
 		System.out.println(pageNamelabel);
 //		
 		
 //      <--- Validating user can not successfully login and running an assertion ---->
 		String invalidLoginPrompt = loginPage.validateLoginInvalidCredentialsEntered();
-		AssertJUnit.assertEquals(invalidLoginPrompt, "Invalid credentials entered", "Text displayed does not matched");
+		Assert.assertEquals(invalidLoginPrompt, "Invalid credentials entered", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);
 
 		boolean text = driver.getPageSource().contains("Invalid credentials entered");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 		
 		
 		Thread.sleep(1000);
 		boolean cancelErrorPromptBtn = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
-		AssertJUnit.assertTrue(cancelErrorPromptBtn);
+		Assert.assertTrue(cancelErrorPromptBtn);
 	}
 	
 	
@@ -297,23 +298,23 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		System.out.println(url);
 
  
 //      <--- Validating user can successfully login and running an assertion ---->
   
 		String invalidLoginPrompt = loginPage.validateEmailMustBeAValidEmailAddressErrorPrompt();
-		AssertJUnit.assertEquals(invalidLoginPrompt, "The email must be a valid email address.", "Text displayed does not matched");
+		Assert.assertEquals(invalidLoginPrompt, "The email must be a valid email address.", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);
 
 		boolean text = driver.getPageSource().contains("The email must be a valid email address.");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
        
 		Thread.sleep(1000);
 		boolean cancelErrorPromptBtn = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
-		AssertJUnit.assertTrue(cancelErrorPromptBtn);
+		Assert.assertTrue(cancelErrorPromptBtn);
 	}
 	
 	
@@ -344,23 +345,23 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		System.out.println(url);
 
  
 //      <--- Validating user can successfully login and running an assertion ---->
   
 		String invalidLoginPrompt = loginPage.validateEmailFieldIsRequiredErrorPrompt();
-		AssertJUnit.assertEquals(invalidLoginPrompt, "The email field is required.", "Text displayed does not matched");
+		Assert.assertEquals(invalidLoginPrompt, "The email field is required.", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);
 
 		boolean text = driver.getPageSource().contains("The email field is required.");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
        
 		Thread.sleep(1000);
 		boolean cancelErrorPromptBtn = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
-		AssertJUnit.assertTrue(cancelErrorPromptBtn);
+		Assert.assertTrue(cancelErrorPromptBtn);
 	}
 	
 	
@@ -390,18 +391,18 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		System.out.println(url);
 
  
 //      <--- Validating user can successfully login and running an assertion ---->
   
 		String invalidLoginPrompt = loginPage.validatePasswordFieldIsRequiredErrorPrompt();
-		AssertJUnit.assertEquals(invalidLoginPrompt, "The password field is required.", "Text displayed does not matched");
+		Assert.assertEquals(invalidLoginPrompt, "The password field is required.", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);
 
 		boolean text = driver.getPageSource().contains("The password field is required.");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
        
 		Thread.sleep(1000);
@@ -432,13 +433,13 @@ public class LoginPageTest extends TestBase{
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
         
  
 //      <--- Validating user can successfully login and running an assertion ---->
   
 		String invalidLoginPrompt = loginPage.validatePasswordToBe6Characters();
-		AssertJUnit.assertEquals(invalidLoginPrompt, "The password must be at least 6 characters.", "Text displayed does not matched");
+		Assert.assertEquals(invalidLoginPrompt, "The password must be at least 6 characters.", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);
 		
 		boolean text = driver.getPageSource().contains("The password must be at least 6 characters.");
@@ -447,7 +448,7 @@ public class LoginPageTest extends TestBase{
 		
 		Thread.sleep(1000);
 		boolean cancelErrorPromptBtn = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
-		AssertJUnit.assertTrue(cancelErrorPromptBtn);
+		Assert.assertTrue(cancelErrorPromptBtn);
 	}
 	
 	
@@ -471,18 +472,18 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
-		  AssertJUnit.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
+		  Assert.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
         System.out.println(url);
 
  
 //      <--- Validating user can successfully login and running an assertion ---->
   
 		String forgotPasswordNameLabel = loginPage.validateCorrectForgetPasswordPageNameLabel();
-		AssertJUnit.assertEquals(forgotPasswordNameLabel, "Forgot Password", "Text displayed does not matched");
+		Assert.assertEquals(forgotPasswordNameLabel, "Forgot Password", "Text displayed does not matched");
 		System.out.println(forgotPasswordNameLabel);
 
 		boolean text = driver.getPageSource().contains("Forgot Password");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 	}
 	
@@ -518,17 +519,17 @@ public class LoginPageTest extends TestBase{
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/", "URL does not matched");
 		System.out.println(url);
 
  
 //      <--- Validating user can successfully terminate forget password process and running two layers assertion ---->
 		String pageNamelabel = loginPage.validateCorrectLoginPageName();
-		AssertJUnit.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
+		Assert.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
 		System.out.println(pageNamelabel);
 
 		boolean text = driver.getPageSource().contains("Log In");
-		AssertJUnit.assertTrue(text);
+		Assert.assertTrue(text);
 		System.out.println(text);
 	}
 	
@@ -559,7 +560,7 @@ public class LoginPageTest extends TestBase{
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
 		System.out.println(url);
-		AssertJUnit.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
+		Assert.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
         
  
 //      <--- Validating user can successfully login and running an assertion ---->
@@ -600,250 +601,250 @@ public class LoginPageTest extends TestBase{
 	
 	 
 	
-//	@JiraPolicy(logTicketReady = true)
+	@JiraPolicy(logTicketReady = true)
 //	@Test(priority = 13)
-//	public void verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName() throws Exception
-//	{
-//		loginPage = homePage.validateClickOnLoginLink();
-//		Thread.sleep(2000);
+	public void verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName() throws Exception
+	{
+		loginPage = homePage.validateClickOnLoginLink();
+		Thread.sleep(2000);
+		
+//      <---  Create Array List to keep Tab information ---->
+        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+
+        // Navigate to New Tab
+        driver.switchTo().window(tabs2.get(1));
+         
+        Thread.sleep(4000);    		
+        loginPage = loginPage.validateClickOnForgotPasswordLink();
+        
+        Thread.sleep(2000);    		
+        loginPage = loginPage.validateUserForgotPasswordWithValidEmail(prop.getProperty("emailWithoutServerHostName"));
+        
+//      <--- Validating login URL and running an assertion ---->
+        String url = driver.getCurrentUrl();
+		System.out.println(url);
+		Assert.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
+        
+ 
+//      <--- Validating user can successfully login and running an assertion ---->
+		String pageNameLabe = loginPage.validateCorrectForgetPasswordPageNameLabel();
+		Assert.assertEquals(pageNameLabe, "Forgot Password", "Text displayed does not matched");
+		System.out.println(pageNameLabe);
+		
+		
+		String invalidEmailPrompt1 = loginPage.validateEmailMustBeAValidEmailAddressErrorPrompt();
+		Assert.assertEquals(invalidEmailPrompt1, "The email must be a valid email address.", "Text displayed does not matched");
+		System.out.println(invalidEmailPrompt1);
 //		
-////      <---  Create Array List to keep Tab information ---->
-//        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
-//
-//        // Navigate to New Tab
-//        driver.switchTo().window(tabs2.get(1));
-//         
-//        Thread.sleep(4000);    		
-//        loginPage = loginPage.validateClickOnForgotPasswordLink();
-//        
-//        Thread.sleep(2000);    		
-//        loginPage = loginPage.validateUserForgotPasswordWithValidEmail(prop.getProperty("emailWithoutServerHostName"));
-//        
-////      <--- Validating login URL and running an assertion ---->
-//        String url = driver.getCurrentUrl();
-//		System.out.println(url);
-//		Assert.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
-//        
-// 
-////      <--- Validating user can successfully login and running an assertion ---->
-//		String pageNameLabe = loginPage.validateCorrectForgetPasswordPageNameLabel();
-//		Assert.assertEquals(pageNameLabe, "Forgot Password", "Text displayed does not matched");
-//		System.out.println(pageNameLabe);
-//		
-//		
-//		String invalidEmailPrompt1 = loginPage.validateEmailMustBeAValidEmailAddressErrorPrompt();
-//		Assert.assertEquals(invalidEmailPrompt1, "The email must be a valid email address.", "Text displayed does not matched");
-//		System.out.println(invalidEmailPrompt1);
-////		
-//		String invalidEmailPrompt2 = loginPage.validateSelectedEmailIsInvalidErrorPrompt();
-//		Assert.assertEquals(invalidEmailPrompt2, "The selected email is invalid.", "Text displayed does not matched");
-//		System.out.println(invalidEmailPrompt2);
-//		
-//		boolean text = driver.getPageSource().contains("The email must be a valid email address.");
-//		System.out.println(text);
-//		Assert.assertTrue(text);
-//
-////		This object reference is to click on error prompt cancel button 
+		String invalidEmailPrompt2 = loginPage.validateSelectedEmailIsInvalidErrorPrompt();
+		Assert.assertEquals(invalidEmailPrompt2, "The selected email is invalid.", "Text displayed does not matched");
+		System.out.println(invalidEmailPrompt2);
+		
+		boolean text = driver.getPageSource().contains("The email must be a valid email address.");
+		System.out.println(text);
+		Assert.assertTrue(text);
+
+//		This object reference is to click on error prompt cancel button 
+		Thread.sleep(1000);   
+		loginPage = loginPage.validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptBtn();
+		Thread.sleep(1000);   
+		loginPage = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptBtn();
+		
+		
+		
+//		This object reference is to click on error prompt cancel button and validate an assertion on the cancel btn 
+		
 //		Thread.sleep(1000);   
-//		loginPage = loginPage.validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptBtn();
-//		Thread.sleep(1000);   
-//		loginPage = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptBtn();
+//		boolean cancelErrorPrompt1 = loginPage.validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptButton();
+//		Assert.assertTrue(cancelErrorPrompt1);
 //		
-//		
-//		
-////		This object reference is to click on error prompt cancel button and validate an assertion on the cancel btn 
-//		
-////		Thread.sleep(1000);   
-////		boolean cancelErrorPrompt1 = loginPage.validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptButton();
-////		Assert.assertTrue(cancelErrorPrompt1);
-////		
-////		Thread.sleep(1000);
-////		boolean cancelErrorPrompt2 = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
-////		Assert.assertTrue(cancelErrorPrompt2);	
-//	}
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 14)
-//	public void verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName() throws Exception
-//	{
-//		loginPage = homePage.validateClickOnLoginLink();
-//		Thread.sleep(2000);
-//		
-////      <---  Create Array List to keep Tab information ---->
-//        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
-//
-//        // Navigate to New Tab
-//        driver.switchTo().window(tabs2.get(1));
-//         
-//        Thread.sleep(4000);    		
-//        loginPage = loginPage.validateClickOnForgotPasswordLink();
-//        
-//        Thread.sleep(2000);    		
-//        loginPage = loginPage.validateUserForgotPasswordWithValidEmail(prop.getProperty("emailWithoutDomainName"));
-//        
-////      <--- Validating login URL and running an assertion ---->
-//        String url = driver.getCurrentUrl();
-//		System.out.println(url);
-//		Assert.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
-//        
-// 
-////      <--- Validating user can successfully login and running an assertion ---->
-//		String pageNameLabe = loginPage.validateCorrectForgetPasswordPageNameLabel();
-//		Assert.assertEquals(pageNameLabe, "Forgot Password", "Text displayed does not matched");
-//		System.out.println(pageNameLabe);
-//			
-//		String invalidEmailPrompt2 = loginPage.validateSelectedEmailIsInvalidErrorPrompt();
-//		Assert.assertEquals(invalidEmailPrompt2, "The selected email is invalid.", "Text displayed does not matched");
-//		System.out.println(invalidEmailPrompt2);
-//		
-//		boolean text = driver.getPageSource().contains("The selected email is invalid.");
-//		System.out.println(text);
-//		Assert.assertTrue(text);
-//
-//		Thread.sleep(1000);   
-//		boolean cancelErrorPrompt = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
-//		Assert.assertTrue(cancelErrorPrompt);
-//	}
-//	
-//	
-//	
-//	
-//	
-//	
-//	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 15)
-//	public void verifyUserCannotResetForgetPasswordWithEmptyInputField() throws Exception
-//	{
-//		loginPage = homePage.validateClickOnLoginLink();
-//		Thread.sleep(2000);
-//		
-////      <---  Create Array List to keep Tab information ---->
-//        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
-//
-//        // Navigate to New Tab
-//        driver.switchTo().window(tabs2.get(1));
-//         
-//        Thread.sleep(4000);    		
-//        loginPage = loginPage.validateClickOnForgotPasswordLink();
-//        
-//        Thread.sleep(2000);    		
-//        loginPage = loginPage.validateUserForgotPasswordWithValidEmail(prop.getProperty("emptyEmail"));
-//        
-////      <--- Validating login URL and running an assertion ---->
-//        String url = driver.getCurrentUrl();
-//		System.out.println(url);
-//		Assert.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
-//        
-// 
-////      <--- Validating user can successfully login and running an assertion ---->
-//
-//		String invalidLoginPrompt = loginPage.validateEmailFieldIsRequiredErrorPrompt();
-//		Assert.assertEquals(invalidLoginPrompt, "The email field is required.", "Text displayed does not matched");
-//		System.out.println(invalidLoginPrompt);
-//
-//		boolean text = driver.getPageSource().contains("The email field is required.");
-//		Assert.assertTrue(text);
-//		System.out.println(text);
-//       
 //		Thread.sleep(1000);
-//		boolean cancelErrorPromptBtn = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
-//		Assert.assertTrue(cancelErrorPromptBtn);
-//	}
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	@JiraPolicy(logTicketReady = true)
+//		boolean cancelErrorPrompt2 = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
+//		Assert.assertTrue(cancelErrorPrompt2);	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	@JiraPolicy(logTicketReady = true)
+//	@Test(priority = 14)
+	public void verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName() throws Exception
+	{
+		loginPage = homePage.validateClickOnLoginLink();
+		Thread.sleep(2000);
+		
+//      <---  Create Array List to keep Tab information ---->
+        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+
+        // Navigate to New Tab
+        driver.switchTo().window(tabs2.get(1));
+         
+        Thread.sleep(4000);    		
+        loginPage = loginPage.validateClickOnForgotPasswordLink();
+        
+        Thread.sleep(2000);    		
+        loginPage = loginPage.validateUserForgotPasswordWithValidEmail(prop.getProperty("emailWithoutDomainName"));
+        
+//      <--- Validating login URL and running an assertion ---->
+        String url = driver.getCurrentUrl();
+		System.out.println(url);
+		Assert.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
+        
+ 
+//      <--- Validating user can successfully login and running an assertion ---->
+		String pageNameLabe = loginPage.validateCorrectForgetPasswordPageNameLabel();
+		Assert.assertEquals(pageNameLabe, "Forgot Password", "Text displayed does not matched");
+		System.out.println(pageNameLabe);
+			
+		String invalidEmailPrompt2 = loginPage.validateSelectedEmailIsInvalidErrorPrompt();
+		Assert.assertEquals(invalidEmailPrompt2, "The selected email is invalid.", "Text displayed does not matched");
+		System.out.println(invalidEmailPrompt2);
+		
+		boolean text = driver.getPageSource().contains("The selected email is invalid.");
+		System.out.println(text);
+		Assert.assertTrue(text);
+
+		Thread.sleep(1000);   
+		boolean cancelErrorPrompt = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
+		Assert.assertTrue(cancelErrorPrompt);
+	}
+	
+	
+	
+	
+	
+	
+	@JiraPolicy(logTicketReady = true)
+//	@Test(priority = 15)
+	public void verifyUserCannotResetForgetPasswordWithEmptyInputField() throws Exception
+	{
+		loginPage = homePage.validateClickOnLoginLink();
+		Thread.sleep(2000);
+		
+//      <---  Create Array List to keep Tab information ---->
+        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+
+        // Navigate to New Tab
+        driver.switchTo().window(tabs2.get(1));
+         
+        Thread.sleep(4000);    		
+        loginPage = loginPage.validateClickOnForgotPasswordLink();
+        
+        Thread.sleep(2000);    		
+        loginPage = loginPage.validateUserForgotPasswordWithValidEmail(prop.getProperty("emptyEmail"));
+        
+//      <--- Validating login URL and running an assertion ---->
+        String url = driver.getCurrentUrl();
+		System.out.println(url);
+		Assert.assertEquals(url, "https://portal.beamsity.com/auth/forgot_password", "URL does not matched");
+        
+ 
+//      <--- Validating user can successfully login and running an assertion ---->
+
+		String invalidLoginPrompt = loginPage.validateEmailFieldIsRequiredErrorPrompt();
+		Assert.assertEquals(invalidLoginPrompt, "The email field is required.", "Text displayed does not matched");
+		System.out.println(invalidLoginPrompt);
+
+		boolean text = driver.getPageSource().contains("The email field is required.");
+		Assert.assertTrue(text);
+		System.out.println(text);
+       
+		Thread.sleep(1000);
+		boolean cancelErrorPromptBtn = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton();
+		Assert.assertTrue(cancelErrorPromptBtn);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	@JiraPolicy(logTicketReady = true)
 //	@Test(priority = 16)
-//	public void verifyUserCanNavigateToTermsAndConditionsPage() throws Exception
-//	{
-//		loginPage = homePage.validateClickOnLoginLink();
-//		Thread.sleep(2000);
-//		
-////      <---  Create Array List to keep Tab information ---->
-//        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
-//
-//        // Navigate to New Tab
-//        driver.switchTo().window(tabs2.get(1));
-//         
-//        Thread.sleep(2000);    		
-//        privacy_PolicyPage = loginPage.validateClickOnTermsAndConditionsLink();
-//        
-//        ArrayList<String> tabs3 = new ArrayList<String>(driver.getWindowHandles());
-//        driver.switchTo().window(tabs3.get(2));
-//        
-////      <--- Validating login URL and running an assertion ---->
-//        String url = driver.getCurrentUrl();
-//		System.out.println(url);
-//		Assert.assertEquals(url, "https://beamsity.com/privacy_policy/", "URL does not matched");
-//        
-// 
-////      <--- Validating user can successfully login and running an assertion ---->
-//  
-//		String forgotPasswordNameLabel = loginPage.validateCorrectPrivacyPolicyPageNameLabel();
-//		Assert.assertEquals(forgotPasswordNameLabel, "Privacy Policy", "Text displayed does not matched");
-//		System.out.println(forgotPasswordNameLabel);
-//
-//		boolean text = driver.getPageSource().contains("Privacy Policy");
-//		Assert.assertTrue(text);
-//		System.out.println(text);
-//
-//	}
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	
-//	@JiraPolicy(logTicketReady = true)
+	public void verifyUserCanNavigateToTermsAndConditionsPage() throws Exception
+	{
+		loginPage = homePage.validateClickOnLoginLink();
+		Thread.sleep(2000);
+		
+//      <---  Create Array List to keep Tab information ---->
+        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+
+        // Navigate to New Tab
+        driver.switchTo().window(tabs2.get(1));
+         
+        Thread.sleep(2000);    		
+        privacy_PolicyPage = loginPage.validateClickOnTermsAndConditionsLink();
+        
+        ArrayList<String> tabs3 = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tabs3.get(2));
+        
+//      <--- Validating login URL and running an assertion ---->
+        String url = driver.getCurrentUrl();
+		System.out.println(url);
+		Assert.assertEquals(url, "https://beamsity.com/privacy_policy/", "URL does not matched");
+        
+ 
+//      <--- Validating user can successfully login and running an assertion ---->
+  
+		String forgotPasswordNameLabel = loginPage.validateCorrectPrivacyPolicyPageNameLabel();
+		Assert.assertEquals(forgotPasswordNameLabel, "Privacy Policy", "Text displayed does not matched");
+		System.out.println(forgotPasswordNameLabel);
+
+		boolean text = driver.getPageSource().contains("Privacy Policy");
+		Assert.assertTrue(text);
+		System.out.println(text);
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	@JiraPolicy(logTicketReady = true)
 //	@Test(priority = 17)
-//	public void verifyUserCanClickOnTermsAndConditionsLink() throws Exception
-//	{
-//		loginPage = homePage.validateClickOnLoginLink();
-//		Thread.sleep(2000);
-//		
-////      <---  Create Array List to keep Tab information ---->
-//        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
-//
-//        // Navigate to New Tab
-//        driver.switchTo().window(tabs2.get(1));
-//         
-//        Thread.sleep(2000);    		
-//        privacy_PolicyPage = loginPage.validateClickOnTermsAndConditionsLink();
-//        
-//        ArrayList<String> tabs3 = new ArrayList<String>(driver.getWindowHandles());
-//        driver.switchTo().window(tabs3.get(2));
-//        
-////      <--- Validating login URL and running an assertion ---->
-//        String url = driver.getCurrentUrl();
-//		System.out.println(url);
-//		Assert.assertEquals(url, "https://beamsity.com/privacy_policy/", "URL does not matched");
-//        
-// 
-////      <--- Validating user can successfully login and running an assertion ---->
-//  
-//		String forgotPasswordNameLabel = loginPage.validateCorrectPrivacyPolicyPageNameLabel();
-//		Assert.assertEquals(forgotPasswordNameLabel, "Privacy Policy", "Text displayed does not matched");
-//		System.out.println(forgotPasswordNameLabel);
-//
-//		boolean text = driver.getPageSource().contains("Privacy Policy");
-//		Assert.assertTrue(text);
-//		System.out.println(text);
-//
-//	}
+	public void verifyUserCanClickOnTermsAndConditionsLink() throws Exception
+	{
+		loginPage = homePage.validateClickOnLoginLink();
+		Thread.sleep(2000);
+		
+//      <---  Create Array List to keep Tab information ---->
+        ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+
+        // Navigate to New Tab
+        driver.switchTo().window(tabs2.get(1));
+         
+        Thread.sleep(2000);    		
+        privacy_PolicyPage = loginPage.validateClickOnTermsAndConditionsLink();
+        
+        ArrayList<String> tabs3 = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tabs3.get(2));
+        
+//      <--- Validating login URL and running an assertion ---->
+        String url = driver.getCurrentUrl();
+		System.out.println(url);
+		Assert.assertEquals(url, "https://beamsity.com/privacy_policy/", "URL does not matched");
+        
+ 
+//      <--- Validating user can successfully login and running an assertion ---->
+  
+		String forgotPasswordNameLabel = loginPage.validateCorrectPrivacyPolicyPageNameLabel();
+		Assert.assertEquals(forgotPasswordNameLabel, "Privacy Policy", "Text displayed does not matched");
+		System.out.println(forgotPasswordNameLabel);
+
+		boolean text = driver.getPageSource().contains("Privacy Policy");
+		Assert.assertTrue(text);
+		System.out.println(text);
+
+	}
 	
 
 	
