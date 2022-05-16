@@ -73,7 +73,7 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 1) 
+	@Test(priority = 1) 
 	public void verifyUserCanClickSchools_OrganizationsPageLink() throws Exception
 	{
 		Thread.sleep(4000);

@@ -99,7 +99,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void verifyUserCanLoginWith_ValideCredentials() throws Exception
 	{
 		Thread.sleep(3000);
@@ -137,7 +137,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void verifyUserCannotLoginWith_InvalideCredentials() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -180,7 +180,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 4)
+//	@Test(priority = 4)
 	public void verifyUserCannotLoginWith_ValidEmail_InvalidPassword() throws Exception
 	{	
 		Thread.sleep(3000);
@@ -230,7 +230,7 @@ public class LoginPageTest extends TestBase{
 
 
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 5)
+//	@Test(priority = 5)
 	public void verifyUserCannotLoginWith_InvalidEmail_ValidPassword() throws Exception
 	{
 		Thread.sleep(3000);
@@ -279,7 +279,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 6)
+//	@Test(priority = 6)
 	public void verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword() throws Exception
 	{	
 		Thread.sleep(3000);
@@ -325,7 +325,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 7)
+//	@Test(priority = 7)
 	public void verifyUserCannotLoginWith_EmptyEmail_AndValidPassword() throws Exception
 	{	
 		Thread.sleep(3000);
@@ -371,7 +371,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 8)
+//	@Test(priority = 8)
 	public void verifyUserCannotLoginWith_ValidEmail_EmptyPassword() throws Exception
 	{	
 		Thread.sleep(3000);
@@ -415,7 +415,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 9)
+//	@Test(priority = 9)
 	public void verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -455,7 +455,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 10)
+//	@Test(priority = 10)
 	public void verifyUserCanClickForgotPasswordLink() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -494,7 +494,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 11)
+//	@Test(priority = 11)
 	public void verifyUserCanTerminateForgotPasswordProcess() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -539,7 +539,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 12)
+//	@Test(priority = 12)
 	public void verifyUserCanResetForgetPassword_WithValidEmail() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();

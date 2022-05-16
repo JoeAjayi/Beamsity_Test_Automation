@@ -5,6 +5,7 @@
     <classes>
       <class name="com.fbistech.testcases.ContactUsPageTest">
         <methods>
+          <include name="verifyUserCanClickSchools_OrganizationsPageLink"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="verifyUserCanClickOnPrivacyPolicyLink"/>
