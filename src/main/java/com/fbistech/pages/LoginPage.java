@@ -227,7 +227,7 @@ public class LoginPage extends TestBase {
 		Thread.sleep(2000);
 		passWordField.sendKeys(passWord);
 		Thread.sleep(2000);
-		showPasswordEye.click(); 
+//		showPasswordEye.click(); 
 		Thread.sleep(2000); 
 		loginButton.click(); 
 		Thread.sleep(5000); 
@@ -458,17 +458,10 @@ public class LoginPage extends TestBase {
 	
 	
 	
-	
-	
 	public String validateCorrectPrivacyPolicyPageNameLabel()
 	{
 		return privacyPolicyPageNameLabel.getText();
 	}
 	
-	
-	
-	
-	
-
 	
 }

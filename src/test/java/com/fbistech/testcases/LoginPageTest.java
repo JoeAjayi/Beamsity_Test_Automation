@@ -60,7 +60,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void verifyUserCanClickOnLoginLink() throws Exception
 	{
 		Thread.sleep(4000);
@@ -99,7 +99,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void verifyUserCanLoginWith_ValideCredentials() throws Exception
 	{
 		Thread.sleep(3000);
@@ -137,7 +137,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void verifyUserCannotLoginWith_InvalideCredentials() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
