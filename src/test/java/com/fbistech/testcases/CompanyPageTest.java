@@ -30,7 +30,7 @@ public class CompanyPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		initialization_WebBrowser();
 		homePage = new HomePage();
 		companyPage = new CompanyPage();
 		

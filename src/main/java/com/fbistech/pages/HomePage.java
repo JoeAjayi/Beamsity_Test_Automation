@@ -27,6 +27,8 @@ public class HomePage extends TestBase{
 	WebElement beamsityLogo;
 	
 	
+	
+	
 	WebElement userNameLabel;
 	
 	
@@ -45,7 +47,7 @@ public class HomePage extends TestBase{
 	
 	@FindBy(xpath = "//a[contains(text(),'Contact Us')]")  //span[contains(text(),'Contact Us')] | //a[text()='Contact Us']
 	@CacheLookup
-	WebElement contactUsLink1;
+	WebElement contactUsLink_Navbar;
 	
 	
 	
@@ -358,7 +360,7 @@ public class HomePage extends TestBase{
 	
 	public ContactUsPage validateClickOnContactUsLinkOnNavBar() throws Exception
 	{
-		contactUsLink1.click();
+		contactUsLink_Navbar.click();
 		return new ContactUsPage();
 	}
 	
@@ -366,7 +368,7 @@ public class HomePage extends TestBase{
 	public ContactUsPage validateClickOnContactUsLinks() throws Exception
 	{
 		Thread.sleep(5000);
-		contactUsLink1.click();
+		contactUsLink_Navbar.click();
 		Thread.sleep(4000);
 		driver.navigate().back();
 		Thread.sleep(4000);
@@ -393,9 +395,6 @@ public class HomePage extends TestBase{
 	
 	
 	
-
-	
-	
 	
 	public LoginPage validateClickOnLoginLink()
 	{
@@ -409,9 +408,7 @@ public class HomePage extends TestBase{
 		return loginPageNameLabel.getText();
 	}
 	
-	
-	
-	
+
 	
 	public PartnerWithUsPage validateClickOnPartnerWithUsLink()
 	{
@@ -424,9 +421,6 @@ public class HomePage extends TestBase{
 	{
 		return partnerWithUsPageNameLabel.getText();
 	}
-	
-	
-	
 	
 
 	

@@ -20,7 +20,6 @@ public class TestUtil extends TestBase {
 	
 
 	 
-	/* watch 03-Page Object Model (POM) Design With Selenium - Part -3.mp4  */
 	public void switchToFrame()
 	{
 		driver.switchTo().frame("mainpanel");

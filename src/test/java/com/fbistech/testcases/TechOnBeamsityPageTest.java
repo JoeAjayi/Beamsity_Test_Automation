@@ -50,7 +50,7 @@ public class TechOnBeamsityPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp()
 	{ 
-		initialization(); 
+		initialization_WebBrowser(); 
 		
 		homePage = new HomePage();
 		schools_OrganizationsPage = new Schools_OrganizationsPage();

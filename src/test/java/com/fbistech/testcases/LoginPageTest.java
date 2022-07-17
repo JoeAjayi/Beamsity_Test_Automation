@@ -34,7 +34,7 @@ public class LoginPageTest extends TestBase{
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		initialization_WebBrowser();
 		 
 		homePage = new HomePage();  
 		loginPage = new LoginPage();
@@ -44,14 +44,14 @@ public class LoginPageTest extends TestBase{
 	
 	
 
-//	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 1)
-//	public void verifyLoginPageTitle()
-//	{
-//		String title = loginPage.validateLoginPageTitle();
-//		System.out.println(title);
-//		Assert.assertEquals(title, "Beamsity"); 
-//	}
+	@JiraPolicy(logTicketReady=true)
+	@Test(priority = 1)
+	public void verifyLoginPageTitle()
+	{
+		String loginPageTitle = loginPage.validateLoginPageTitle();;
+		Assert.assertEquals(loginPageTitle, "Beamsity"); 
+		System.out.println(loginPageTitle);
+	}
 
 	  
 	

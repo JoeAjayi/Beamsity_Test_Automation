@@ -31,7 +31,7 @@ public class SubscribePageTest extends TestBase {
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		initialization_WebBrowser();
 		homePage = new HomePage();
 		subscribePage = new SubscribePage();
 		

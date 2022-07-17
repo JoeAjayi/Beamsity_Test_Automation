@@ -292,6 +292,14 @@ public class Schools_OrganizationsPage extends TestBase{
 	}
 	
 	
+	
+//	Actions:
+	public String validateHomePageTitle() 
+	{
+		return driver.getTitle(); 
+	}
+	
+	
 	public HomePage validateClickOnBeamsityLogo() 
 	{
 		beamsityLogo.click();

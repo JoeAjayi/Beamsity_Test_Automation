@@ -14,7 +14,7 @@ public class LoginPage extends TestBase {
 //	PageFactory - Object Repository 
 	
 	
-	@FindBy(xpath = "//div[contains(text(),'Log In')]")
+	@FindBy(xpath = "//div[contains(text(),'Log In')]") // WebObject or WebElement 
 	@CacheLookup
 	WebElement loginPageNameLabel; 
 	
@@ -197,11 +197,11 @@ public class LoginPage extends TestBase {
 	
 
 	
-	// Initializing the Page Objects | object repository:
-	// how to initialize the element with the help of page factory 
+	// To Initialize the Page Objects | object repository create the constructor of the class
+	
 	public LoginPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this); //the driver is coming from TestB ase class. This => current class objects
 	}
 	
 

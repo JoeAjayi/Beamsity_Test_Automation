@@ -29,7 +29,7 @@ public class CoursesPageTest extends TestBase{
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		initialization_WebBrowser();
 		homePage = new HomePage();
 		coursesPage = new CoursesPage();
 		

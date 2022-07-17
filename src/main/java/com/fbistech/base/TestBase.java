@@ -32,7 +32,6 @@ public class TestBase {
 		try  
 		{
 			prop = new Properties();
-//			FileInputStream ip = new FileInputStream("/Users/josephajayi/eclipse-workspace/BeamSity_Website/src/main/java/com/fbistech/config/config.properties");
 			FileInputStream input = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/fbistech/config/config.properties");
 			prop.load(input);	
 			 
@@ -48,7 +47,7 @@ public class TestBase {
 	}
 	
 	 
-	public static void initialization()
+	public static void initialization_WebBrowser()
 	{
 		String browserName = prop.getProperty("browser");
 		
@@ -56,7 +55,7 @@ public class TestBase {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 
-		
+	 
 //    	if (browserName.equals("chrome"))
 //    	{
 //    		WebDriverManager.chromedriver().setup();

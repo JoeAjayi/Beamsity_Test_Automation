@@ -31,7 +31,7 @@ public class SignupPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() 
 	{
-		initialization();
+		initialization_WebBrowser();
 		homePage = new HomePage();
 		signupPage = new SignupPage();
 		loginPage = new LoginPage();

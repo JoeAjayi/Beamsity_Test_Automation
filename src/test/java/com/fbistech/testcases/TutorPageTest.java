@@ -30,7 +30,7 @@ public class TutorPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		initialization_WebBrowser();
 		
 		homePage = new HomePage();
 		sponsors_OrganizationPage = new Sponsors_OrganizationPage();
