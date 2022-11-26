@@ -50,7 +50,7 @@ public class HomePageTest extends TestBase {
 	
 	
 //	This constructor, with super key word will call the TestBase class constructor 
-	public HomePageTest()   
+	public HomePageTest() throws Exception   
 	{
 		super();
 	}
@@ -81,9 +81,11 @@ public class HomePageTest extends TestBase {
 //		homePage = signInPage.loginDetails(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
+	
+	
 	 
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void verifyHomePageTitle()
 	{
 		String homePageTitle = homePage.validateHomePageTitle(); 
@@ -93,7 +95,7 @@ public class HomePageTest extends TestBase {
 	
 
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void verifyBeamsityLogo()
 	{
 		boolean logo = homePage.validateBeamsityLogo();
@@ -104,7 +106,7 @@ public class HomePageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void verifyUserCanClickOnSchools_OrganizationsLinkLink() throws Exception
 	{
 		schools_OrganizationsPage = homePage.validateClickOnSchools_OrganizationsLink();
@@ -124,13 +126,13 @@ public class HomePageTest extends TestBase {
 		Assert.assertTrue(text);
 		System.out.println(text);
 	}
-	
+	 
 
 	
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void verifyUserCanClickOnTeachOnBeamsitykLink() throws Exception
 	{
 		techOnBeamsityPage = homePage.validateClickOnTechOnBeamsityLink();
@@ -151,11 +153,9 @@ public class HomePageTest extends TestBase {
 	}
 
 	
-	
-
 
 	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 5)
+	@Test(priority = 5)
 	public void verifyUserCanClickOnContactUsLinks() throws Exception
 	{
 		contactUsPage = homePage.validateClickOnContactUsLinks();
@@ -182,11 +182,8 @@ public class HomePageTest extends TestBase {
 	
 	
 	
-	 
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 6)
+	@Test(priority = 6)
 	public void verifyUserCanClickOnLoginLink() throws Exception
 	{   
 		loginPage = homePage.validateClickOnLoginLink();
@@ -215,13 +212,9 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	
-	
-	
-
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 7)
+	@Test(priority = 7)
 	public void verifyUserCanclickOnPartnerWithUsLink()
 	{
 		partnerWithUsPage = homePage.validateClickOnPartnerWithUsLink();
@@ -241,14 +234,10 @@ public class HomePageTest extends TestBase {
 		Assert.assertTrue(pageNamelText);
 	}
 
-	
-	
-
-
-	
+		
 
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 8)
+	@Test(priority = 8)
 	public void verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromSchoolsOrganizationsPage() throws Exception
 	{
 		Thread.sleep(4000);
@@ -277,12 +266,8 @@ public class HomePageTest extends TestBase {
 	 
 
 
-	
-	
-
-
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 9)
+	@Test(priority = 9)
 	public void verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromTechOnBeamsityPage() throws Exception
 	{
 		Thread.sleep(4000);
@@ -310,13 +295,8 @@ public class HomePageTest extends TestBase {
 	 
 	
 	
-	
-	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 10)
+	@Test(priority = 10)
 	public void verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromContactUsPage() throws Exception
 	{
 		Thread.sleep(4000);
@@ -343,13 +323,9 @@ public class HomePageTest extends TestBase {
 	}
  
  
-
-	
-	
-	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 11)
+	@Test(priority = 11)
 	public void verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromPartnerWithUsPage() throws Exception
 	{
 		Thread.sleep(4000);
@@ -380,7 +356,7 @@ public class HomePageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 12)
+	@Test(priority = 12)
 	public void verifyUserCanClickOnGetStartedLink() throws Exception
 	{
 		partnerWithUsPage = homePage.validateClickOnGetStartedLinks();
@@ -401,12 +377,9 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	
-	
-	
-	
+
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 13)
+	@Test(priority = 13)
 	public void verifyUserCanClickOnLearnMoreLink() throws Exception
 	{
 		techOnBeamsityPage = homePage.validateClickOnLearnMoreLink();
@@ -429,9 +402,8 @@ public class HomePageTest extends TestBase {
 
 
 	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 14)
+	@Test(priority = 14)
 	public void verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromAboutUsPage() throws Exception
 	{ 
 		Thread.sleep(3000);
@@ -462,9 +434,8 @@ public class HomePageTest extends TestBase {
 	
 	
 	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 15)
+	@Test(priority = 15)
 	public void verifyUserIsRedirectedToHomePageOnClickBeamsityLogoFromPrivatePolicyPage() throws Exception
 	{
 		Thread.sleep(3000);
@@ -492,14 +463,9 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	
-	
-	
-	
-	
 		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 16)
+	@Test(priority = 16)
 	public void verifyUserCanClickOnAboutUsLink() throws Exception
 	{
 		aboutUsPage = homePage.validateClickOnAboutUsLink();
@@ -521,14 +487,10 @@ public class HomePageTest extends TestBase {
 		System.out.println(pageNamelText);
 	}
 	
-
-
-	
-
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 16)
+	@Test(priority = 17)
 	public void verifyUserCanClickOnPrivacyPolicyLink() throws Exception
 	{
 		privacy_PolicyPage = homePage.validateClickOnPrivacyPolicyLink();
@@ -553,12 +515,8 @@ public class HomePageTest extends TestBase {
 
 	
 	
-	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 18)
+	@Test(priority = 18)
 	public void verifyUserIsRedirectedToGoogleMapNavigation_ClickOnContactAddressLink() throws Exception
 	{
 		homePage = homePage.validateClickOnContactUsOfficeAddress();
@@ -585,15 +543,13 @@ public class HomePageTest extends TestBase {
 	
 	
 	
-	
 
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 19)
+	@Test(priority = 19)
 	public void verifyUserCanSignUpToMailingList() throws Exception
 	{
 		homePage = homePage.validateSignUpToMailingList(prop.getProperty("userEmail"));
 		Thread.sleep(2000);
-	
 	
 //		<--- Validating SignUp To Mailing List success and running two layers of assertion ---->
 		
@@ -609,16 +565,14 @@ public class HomePageTest extends TestBase {
 	}
 
 	
-	
-	
+
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 20)
+	@Test(priority = 20)
 	public void verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom() throws Exception
 	{
 		homePage = homePage.validateSignUpToMailingListWithInvalidEmailFormat(prop.getProperty("emailWithOutDotCom"));
 		Thread.sleep(2000);
-	
 	
 //		<--- Validating SignUp To Mailing List success and running two layers of assertion ---->
 		
@@ -635,11 +589,8 @@ public class HomePageTest extends TestBase {
 
 	
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 21)
+	@Test(priority = 21)
 	public void verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail() throws Exception
 	{
 		homePage = homePage.validateSignUpToMailingListWithInvalidEmailFormat(prop.getProperty("emailWithOut@gmail"));
@@ -660,10 +611,8 @@ public class HomePageTest extends TestBase {
 	
 	
 	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 22)
+	@Test(priority = 22)
 	public void verifyUserCannotSignUpToMailingListWith_PhoneNumber() throws Exception
 	{
 		homePage = homePage.validateSignUpToMailingListWithInvalidEmailFormat(prop.getProperty("signUpWithPhoneNo"));
@@ -686,7 +635,7 @@ public class HomePageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 23)
+	@Test(priority = 23)
 	public void verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail() throws Exception
 	{
 		homePage = homePage.validateSignUpToMailingListWithInvalidEmailFormat(prop.getProperty("userEmail"));
@@ -706,11 +655,8 @@ public class HomePageTest extends TestBase {
 	
 	
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 24)
+	@Test(priority = 24)
 	public void verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail() throws Exception
 	{
 		homePage = homePage.validateSignUpToMailingListWithInvalidEmailFormat(prop.getProperty("emailWithOut@gmail"));
@@ -729,9 +675,7 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	
-	
-	
+
 	
 	@JiraPolicy(logTicketReady = true)
 //	@Test(priority = 25)
@@ -763,11 +707,8 @@ public class HomePageTest extends TestBase {
 	
 	
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 26)
+	@Test(priority = 26)
 	public void verifyUserCanInstallBeamsityApp() throws Exception
 	{
 		homePage = homePage.validateUserInstallBeamsityApp();
@@ -796,10 +737,8 @@ public class HomePageTest extends TestBase {
 	
 	
 	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 27)
+//	@Test(priority = 27)
 	public void verifyUserCanClickOnContactUsEmail() throws Exception
 	{
 		homePage = homePage.validateClickOnContactEmail();
@@ -826,31 +765,13 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	@Test(priority = 9 )
-//	public void verifyUsernameOnHomePageTest() 
-//	{
-////		testU til.switchToFrame();
-//		Assert.assertTrue(homePage.verifyUserNameOnHomePage()); 	 
-//	}
-	
-	
+
 	
 	
 	
 	@AfterMethod
 	public void tearDown() throws Exception
-	{	
+	{	 
 		Thread.sleep(5000);
 		driver.quit();
 	}

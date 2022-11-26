@@ -1,108 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="4" ignored="0" total="18" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22458" started-at="2022-07-16T19:37:10 WAT" finished-at="2022-07-16T19:37:33 WAT">
+  <suite name="Default suite" duration-ms="456494" started-at="2022-11-26T22:00:37 WAT" finished-at="2022-11-26T22:08:13 WAT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22458" started-at="2022-07-16T19:37:10 WAT" finished-at="2022-07-16T19:37:33 WAT">
-      <class name="com.fbistech.testcases.HomePageTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.fbistech.testcases.HomePageTest@569cfc36]" name="setUp" is-config="true" duration-ms="22418" started-at="2022-07-16T19:37:10 WAT" finished-at="2022-07-16T19:37:32 WAT">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 19.522
-  (Session info: chrome=103.0.5060.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Josephs-MacBoo.local', ip: 'fe80:0:0:0:8cf:f21c:cf0e:7226%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 501e0aca87b822ca4d138bb5ee893ede]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.522
-  (Session info: chrome=103.0.5060.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Josephs-MacBoo.local', ip: 'fe80:0:0:0:8cf:f21c:cf0e:7226%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 501e0aca87b822ca4d138bb5ee893ede
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at com.sun.proxy.$Proxy12.get(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
-at com.fbistech.base.TestBase.initialization_WebBrowser(TestBase.java:114)
-at com.fbistech.testcases.HomePageTest.setUp(HomePageTest.java:64)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+    <test name="Default test" duration-ms="456494" started-at="2022-11-26T22:00:37 WAT" finished-at="2022-11-26T22:08:13 WAT">
+      <class name="com.fbistech.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="6484" started-at="2022-11-26T22:00:37 WAT" finished-at="2022-11-26T22:00:43 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="verifyUserCanClickOnContactUsEmail()[pri:27, instance:com.fbistech.testcases.HomePageTest@569cfc36]" name="verifyUserCanClickOnContactUsEmail" duration-ms="0" started-at="2022-07-16T19:37:32 WAT" finished-at="2022-07-16T19:37:32 WAT">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:1, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyLoginPageTitle" duration-ms="15" started-at="2022-11-26T22:00:43 WAT" finished-at="2022-11-26T22:00:43 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6092" started-at="2022-11-26T22:00:43 WAT" finished-at="2022-11-26T22:00:49 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4281" started-at="2022-11-26T22:00:49 WAT" finished-at="2022-11-26T22:00:54 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanClickOnLoginLink()[pri:2, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCanClickOnLoginLink" duration-ms="7356" started-at="2022-11-26T22:00:54 WAT" finished-at="2022-11-26T22:01:01 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanClickOnLoginLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6097" started-at="2022-11-26T22:01:01 WAT" finished-at="2022-11-26T22:01:07 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4032" started-at="2022-11-26T22:01:07 WAT" finished-at="2022-11-26T22:01:11 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanLoginWith_ValideCredentials()[pri:3, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCanLoginWith_ValideCredentials" duration-ms="29489" started-at="2022-11-26T22:01:11 WAT" finished-at="2022-11-26T22:01:41 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginWith_ValideCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6109" started-at="2022-11-26T22:01:41 WAT" finished-at="2022-11-26T22:01:47 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="9131" started-at="2022-11-26T22:01:47 WAT" finished-at="2022-11-26T22:01:56 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_InvalideCredentials()[pri:4, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotLoginWith_InvalideCredentials" duration-ms="13748" started-at="2022-11-26T22:01:56 WAT" finished-at="2022-11-26T22:02:10 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_InvalideCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6098" started-at="2022-11-26T22:02:10 WAT" finished-at="2022-11-26T22:02:16 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4967" started-at="2022-11-26T22:02:16 WAT" finished-at="2022-11-26T22:02:21 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_ValidEmail_InvalidPassword()[pri:5, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotLoginWith_ValidEmail_InvalidPassword" duration-ms="18987" started-at="2022-11-26T22:02:21 WAT" finished-at="2022-11-26T22:02:40 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_ValidEmail_InvalidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6095" started-at="2022-11-26T22:02:40 WAT" finished-at="2022-11-26T22:02:46 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4908" started-at="2022-11-26T22:02:46 WAT" finished-at="2022-11-26T22:02:51 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_InvalidEmail_ValidPassword()[pri:6, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotLoginWith_InvalidEmail_ValidPassword" duration-ms="17120" started-at="2022-11-26T22:02:51 WAT" finished-at="2022-11-26T22:03:08 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_InvalidEmail_ValidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6099" started-at="2022-11-26T22:03:08 WAT" finished-at="2022-11-26T22:03:14 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4137" started-at="2022-11-26T22:03:14 WAT" finished-at="2022-11-26T22:03:18 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword()[pri:7, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword" duration-ms="17311" started-at="2022-11-26T22:03:18 WAT" finished-at="2022-11-26T22:03:35 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6097" started-at="2022-11-26T22:03:35 WAT" finished-at="2022-11-26T22:03:41 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4140" started-at="2022-11-26T22:03:41 WAT" finished-at="2022-11-26T22:03:46 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_EmptyEmail_AndValidPassword()[pri:8, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotLoginWith_EmptyEmail_AndValidPassword" duration-ms="17843" started-at="2022-11-26T22:03:46 WAT" finished-at="2022-11-26T22:04:03 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_EmptyEmail_AndValidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6103" started-at="2022-11-26T22:04:03 WAT" finished-at="2022-11-26T22:04:10 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4586" started-at="2022-11-26T22:04:10 WAT" finished-at="2022-11-26T22:04:14 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_ValidEmail_EmptyPassword()[pri:9, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotLoginWith_ValidEmail_EmptyPassword" duration-ms="17479" started-at="2022-11-26T22:04:14 WAT" finished-at="2022-11-26T22:04:32 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_ValidEmail_EmptyPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6097" started-at="2022-11-26T22:04:32 WAT" finished-at="2022-11-26T22:04:38 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4550" started-at="2022-11-26T22:04:38 WAT" finished-at="2022-11-26T22:04:42 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters()[pri:10, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters" duration-ms="13434" started-at="2022-11-26T22:04:42 WAT" finished-at="2022-11-26T22:04:56 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6097" started-at="2022-11-26T22:04:56 WAT" finished-at="2022-11-26T22:05:02 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="5105" started-at="2022-11-26T22:05:02 WAT" finished-at="2022-11-26T22:05:07 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanClickForgotPasswordLink()[pri:11, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCanClickForgotPasswordLink" duration-ms="6173" started-at="2022-11-26T22:05:07 WAT" finished-at="2022-11-26T22:05:13 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanClickForgotPasswordLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6098" started-at="2022-11-26T22:05:13 WAT" finished-at="2022-11-26T22:05:19 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="5013" started-at="2022-11-26T22:05:19 WAT" finished-at="2022-11-26T22:05:24 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanTerminateForgotPasswordProcess()[pri:12, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCanTerminateForgotPasswordProcess" duration-ms="10233" started-at="2022-11-26T22:05:24 WAT" finished-at="2022-11-26T22:05:34 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanTerminateForgotPasswordProcess -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6121" started-at="2022-11-26T22:05:34 WAT" finished-at="2022-11-26T22:05:41 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="6343" started-at="2022-11-26T22:05:41 WAT" finished-at="2022-11-26T22:05:47 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyUserCanResetForgetPassword_WithValidEmail()[pri:13, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCanResetForgetPassword_WithValidEmail" duration-ms="22478" started-at="2022-11-26T22:05:47 WAT" finished-at="2022-11-26T22:06:09 WAT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 19.522
-  (Session info: chrome=103.0.5060.114)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][contains(text(),'Reset password link has been sent to your register')]"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Josephs-MacBoo.local', ip: 'fe80:0:0:0:8cf:f21c:cf0e:7226%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:25ac:71f0:c4f6:89d1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 501e0aca87b822ca4d138bb5ee893ede]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:54993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b29c476b080faa9a3097917fec4560dd
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][contains(text(),'Reset password link has been sent to your register')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 19.522
-  (Session info: chrome=103.0.5060.114)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][contains(text(),'Reset password link has been sent to your register')]"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Josephs-MacBoo.local', ip: 'fe80:0:0:0:8cf:f21c:cf0e:7226%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:25ac:71f0:c4f6:89d1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:55798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 501e0aca87b822ca4d138bb5ee893ede
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:54993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b29c476b080faa9a3097917fec4560dd
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][contains(text(),'Reset password link has been sent to your register')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -113,26 +188,27 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at com.sun.proxy.$Proxy12.get(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
-at com.fbistech.base.TestBase.initialization_WebBrowser(TestBase.java:114)
-at com.fbistech.testcases.HomePageTest.setUp(HomePageTest.java:64)
+at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy17.getText(Unknown Source)
+at com.fbistech.pages.LoginPage.validateResetPasswordLinkSentSuccessPrompt(LoginPage.java:363)
+at com.fbistech.testcases.LoginPageTest.verifyUserCanResetForgetPassword_WithValidEmail(LoginPageTest.java:538)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -157,15 +233,282 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserCanClickOnContactUsEmail -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.fbistech.testcases.HomePageTest@569cfc36]" name="tearDown" is-config="true" duration-ms="-1657996653000" started-at="2022-07-16T19:37:33 WAT" finished-at="1970-01-01T01:00:00 WAT">
+        </test-method> <!-- verifyUserCanResetForgetPassword_WithValidEmail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6117" started-at="2022-11-26T22:06:09 WAT" finished-at="2022-11-26T22:06:15 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.fbistech.testcases.HomePageTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4338" started-at="2022-11-26T22:06:15 WAT" finished-at="2022-11-26T22:06:20 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName()[pri:14, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName" duration-ms="22340" started-at="2022-11-26T22:06:20 WAT" finished-at="2022-11-26T22:06:42 WAT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:25ac:71f0:c4f6:89d1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:55078}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a5c1c74244924edba6dc48855431394b
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email must be a valid email address.']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email must be a valid email address.']"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:25ac:71f0:c4f6:89d1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:55078}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a5c1c74244924edba6dc48855431394b
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email must be a valid email address.']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy17.getText(Unknown Source)
+at com.fbistech.pages.LoginPage.validateEmailMustBeAValidEmailAddressErrorPrompt(LoginPage.java:320)
+at com.fbistech.testcases.LoginPageTest.verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName(LoginPageTest.java:592)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6097" started-at="2022-11-26T22:06:42 WAT" finished-at="2022-11-26T22:06:48 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="7891" started-at="2022-11-26T22:06:48 WAT" finished-at="2022-11-26T22:06:56 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName()[pri:15, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName" duration-ms="8150" started-at="2022-11-26T22:06:56 WAT" finished-at="2022-11-26T22:07:04 WAT">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at com.fbistech.pages.LoginPage.validateUserForgotPasswordWithValidEmail(LoginPage.java:345)
+at com.fbistech.testcases.LoginPageTest.verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName(LoginPageTest.java:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6104" started-at="2022-11-26T22:07:04 WAT" finished-at="2022-11-26T22:07:10 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4195" started-at="2022-11-26T22:07:10 WAT" finished-at="2022-11-26T22:07:15 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyUserCannotResetForgetPasswordWithEmptyInputField()[pri:16, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCannotResetForgetPasswordWithEmptyInputField" duration-ms="22240" started-at="2022-11-26T22:07:15 WAT" finished-at="2022-11-26T22:07:37 WAT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email field is required.']"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:25ac:71f0:c4f6:89d1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:55166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ea6a06c023d8ca3dbb27ef53fbcdbf3
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email field is required.']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email field is required.']"}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:25ac:71f0:c4f6:89d1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:55166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ea6a06c023d8ca3dbb27ef53fbcdbf3
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email field is required.']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy17.getText(Unknown Source)
+at com.fbistech.pages.LoginPage.validateEmailFieldIsRequiredErrorPrompt(LoginPage.java:305)
+at com.fbistech.testcases.LoginPageTest.verifyUserCannotResetForgetPasswordWithEmptyInputField(LoginPageTest.java:698)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotResetForgetPasswordWithEmptyInputField -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6104" started-at="2022-11-26T22:07:37 WAT" finished-at="2022-11-26T22:07:43 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4240" started-at="2022-11-26T22:07:43 WAT" finished-at="2022-11-26T22:07:47 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanNavigateToTermsAndConditionsPage()[pri:17, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCanNavigateToTermsAndConditionsPage" duration-ms="4684" started-at="2022-11-26T22:07:47 WAT" finished-at="2022-11-26T22:07:52 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanNavigateToTermsAndConditionsPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6102" started-at="2022-11-26T22:07:52 WAT" finished-at="2022-11-26T22:07:58 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="setUp" is-config="true" duration-ms="4384" started-at="2022-11-26T22:07:58 WAT" finished-at="2022-11-26T22:08:02 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanClickOnTermsAndConditionsLink()[pri:18, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="verifyUserCanClickOnTermsAndConditionsLink" duration-ms="4782" started-at="2022-11-26T22:08:02 WAT" finished-at="2022-11-26T22:08:07 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanClickOnTermsAndConditionsLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@1937eaff]" name="tearDown" is-config="true" duration-ms="6096" started-at="2022-11-26T22:08:07 WAT" finished-at="2022-11-26T22:08:13 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.fbistech.testcases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -74,7 +74,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void verifyHomePageTitle()
 	{
 		String homePageTitle = schools_OrganizationsPage.validateHomePageTitle(); 
@@ -84,7 +84,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	 
 	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 1) 
+	@Test(priority = 1) 
 	public void verifyUserCanClickSchoolsOrganizationsPageLink() 
 	{
 		schools_OrganizationsPage = homePage.validateClickOnSchools_OrganizationsLink();
@@ -111,7 +111,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 1) 
+	@Test(priority = 1) 
 	public void verifyUserCanClickBeamsityLogo()
 	{
 //		schools_OrganizationsPage = homePage.validateClickOnBeamsityLogo();
@@ -122,7 +122,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void verifyUserCanClickOnTeachOnBeamsitykLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -153,7 +153,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 
 	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void verifyUserCanClickOnContactUsLinks() throws Exception
 	{
 		Thread.sleep(5000);
@@ -191,7 +191,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void verifyUserCanClickOnLoginLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -226,7 +226,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 5)
+	@Test(priority = 5)
 	public void verifyUserCanclickOnPartnerWithUsLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -255,7 +255,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 6)
+	@Test(priority = 6)
 	public void verifyUserCanClickOnGetStartedLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -284,7 +284,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 7)
+	@Test(priority = 7)
 	public void verifyUserCanClickOnGooglePlayLink() throws Exception
 	{
 		
@@ -322,7 +322,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 8)
+	@Test(priority = 8)
 	public void verifyUserCanClickOnAboutUsLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -358,7 +358,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 9)
+	@Test(priority = 9)
 	public void verifyUserCanClickOnPrivacyPolicyLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -394,7 +394,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 10)
+	@Test(priority = 10)
 	public void verifyUserIsRedirectedToGoogleMapNavigation_ClickOnContactAddressLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -422,12 +422,9 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	
-
-	
-	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 11)
+	@Test(priority = 11)
 	public void verifyUserCanSignUpToMailingList() throws Exception
 	{
 		Thread.sleep(5000);
@@ -453,7 +450,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	 
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 12)
+	@Test(priority = 12)
 	public void verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom() throws Exception
 	{
 		Thread.sleep(5000);
@@ -482,7 +479,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 13)
+	@Test(priority = 13)
 	public void verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -505,11 +502,8 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 14)
+	@Test(priority = 14)
 	public void verifyUserCannotSignUpToMailingListWith_PhoneNumber() throws Exception
 	{
 		Thread.sleep(5000);
@@ -535,7 +529,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 15)
+	@Test(priority = 15)
 	public void verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -562,7 +556,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 16)
+	@Test(priority = 16)
 	public void verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -585,13 +579,9 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	
-	
 
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 17)
+	@Test(priority = 17)
 	public void verifyUserCanInstallBeamsityApp() throws Exception
 	{
 		Thread.sleep(5000);
@@ -640,7 +630,7 @@ public class School_OrganizationPageTest extends TestBase {
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 18)
+	@Test(priority = 18)
 	public void verifyUserCanClickOnContactUsEmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -672,29 +662,7 @@ public class School_OrganizationPageTest extends TestBase {
 
 	
 	
-	
-	
-	
-	
-	
-	
 
-//	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 3) 
-//	public void verifyUserCanFillSponsorForm() throws Exception
-//	{
-//		sponsors_OrganizationPage = homePage.validateClickOnSponsors_OrganizationLink();
-//		Thread.sleep(3000);
-//		schools_OrganizationsPage = schools_OrganizationsPage.clickOnSponsor_OrganizationForm();
-//		homePage = schools_OrganizationsPage.createNewSchool(prop.getProperty("school_OrganizationName"),prop.getProperty("firstName"), 
-//				prop.getProperty("lastName"), prop.getProperty("emailAddress"), prop.getProperty("phoneNo"));
-//	}
-//	
-	
-	
-
-	
-	
 	
 	
 	

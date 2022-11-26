@@ -47,6 +47,9 @@ public class TestBase {
 	}
 	
 	 
+	
+	
+	
 	public static void initialization_WebBrowser()
 	{
 		String browserName = prop.getProperty("browser");
@@ -55,39 +58,23 @@ public class TestBase {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 
-	 
-//    	if (browserName.equals("chrome"))
-//    	{
-//    		WebDriverManager.chromedriver().setup();
-//    		driver = new ChromeDriver();
-//    	}
-//    	else if 
-//    	(browserName.equals("FF")) 
-//    	{
-//    		WebDriverManager.firefoxdriver().setup();
-//    		driver = new FirefoxDriver();
-//    	}
+		
+		
+    	if (browserName.equals("chrome"))
+    	{
+    		WebDriverManager.chromedriver().setup();
+    		driver = new ChromeDriver();
+    	}
+    	else if 
+    	(browserName.equals("FF")) 
+    	{
+    		WebDriverManager.firefoxdriver().setup();
+    		driver = new FirefoxDriver();
+    	}
 		
 		
 		
-		
-//		if(browserName.equals("Chrome"))
-//		{
-//			System.setProperty("webdriver.chrome.driver", "/Users/josephajayi/Desktop/Selenium Drivers/web-Drivers-2020/driver.Chrome/chromedriver87v");	
-//			driver = new ChromeDriver();    
-//		}
-//		else if(browserName.equals("FF"))
-//		{
-//			System.setProperty("webdriver.gecko.driver", "/Users/josephajayi/Desktop/Selenium Drivers/web-Drivers-2020/driver.Firefox/geckodriver v29");	
-//			driver = new FirefoxDriver(); 
-//		}
-//		else 
-//		{
-//			System.out.print("We Do Not Supported This Browser...");
-//		}
-			
-		
-		
+	
 		
 		
     /*  ----The below configuration is to call all the webEventListener inside util package -----*/

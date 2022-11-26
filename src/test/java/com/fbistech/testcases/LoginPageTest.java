@@ -51,22 +51,17 @@ public class LoginPageTest extends TestBase{
 		String loginPageTitle = loginPage.validateLoginPageTitle();;
 		Assert.assertEquals(loginPageTitle, "Beamsity"); 
 		System.out.println(loginPageTitle);
-	}
+	} 
 
 	  
 	
-
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 1)
+	@Test(priority = 2)
 	public void verifyUserCanClickOnLoginLink() throws Exception
 	{
 		Thread.sleep(4000);
 		loginPage = homePage.validateClickOnLoginLink();
 		Thread.sleep(3000);
-		
 		
 //      <---  Create Array List to keep Tab information ---->
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
@@ -81,8 +76,7 @@ public class LoginPageTest extends TestBase{
 
 		
 //		<--- Validating login text is display and running a layer of assertion ---->
-		
-		
+	
 		String pageNamelabel = loginPage.validateCorrectLoginPageName();
 		Assert.assertEquals(pageNamelabel, "Log In", "Text displayed does not matched");
 		System.out.println(pageNamelabel);
@@ -95,11 +89,8 @@ public class LoginPageTest extends TestBase{
 	
 	 
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void verifyUserCanLoginWith_ValideCredentials() throws Exception
 	{
 		Thread.sleep(3000);
@@ -132,12 +123,9 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	
-	
-	
-	
-	
+
 	@JiraPolicy(logTicketReady = true)
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void verifyUserCannotLoginWith_InvalideCredentials() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -176,11 +164,8 @@ public class LoginPageTest extends TestBase{
 	
 	
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 4)
+	@Test(priority = 5)
 	public void verifyUserCannotLoginWith_ValidEmail_InvalidPassword() throws Exception
 	{	
 		Thread.sleep(3000);
@@ -223,14 +208,9 @@ public class LoginPageTest extends TestBase{
 		AssertJUnit.assertTrue(cancelErrorPromptBtn);
 	}
 	
-	
-
-	
-	
-
 
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 5)
+	@Test(priority = 6)
 	public void verifyUserCannotLoginWith_InvalidEmail_ValidPassword() throws Exception
 	{
 		Thread.sleep(3000);
@@ -273,13 +253,9 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	
-	
-	
-	
-	
-	
+
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 6)
+	@Test(priority = 7)
 	public void verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword() throws Exception
 	{	
 		Thread.sleep(3000);
@@ -317,15 +293,10 @@ public class LoginPageTest extends TestBase{
 		Assert.assertTrue(cancelErrorPromptBtn);
 	}
 	
-	
-	
-	
-	
-	
-	
+		
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 7)
+	@Test(priority = 8)
 	public void verifyUserCannotLoginWith_EmptyEmail_AndValidPassword() throws Exception
 	{	
 		Thread.sleep(3000);
@@ -365,13 +336,9 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	
-	
-	
-	
-	
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 8)
+	@Test(priority = 9)
 	public void verifyUserCannotLoginWith_ValidEmail_EmptyPassword() throws Exception
 	{	
 		Thread.sleep(3000);
@@ -415,7 +382,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 9)
+	@Test(priority = 10)
 	public void verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -452,10 +419,8 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 10)
+	@Test(priority = 11)
 	public void verifyUserCanClickForgotPasswordLink() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -487,14 +452,9 @@ public class LoginPageTest extends TestBase{
 		System.out.println(text);
 	}
 	
-	
-	
-	
-	
-	
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 11)
+	@Test(priority = 12)
 	public void verifyUserCanTerminateForgotPasswordProcess() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -535,11 +495,8 @@ public class LoginPageTest extends TestBase{
 	
 	
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 12)
+	@Test(priority = 13)
 	public void verifyUserCanResetForgetPassword_WithValidEmail() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -602,7 +559,7 @@ public class LoginPageTest extends TestBase{
 	 
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 13)
+	@Test(priority = 14)
 	public void verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -664,14 +621,10 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	
-	
-	
-	
-	
-	
+
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 14)
+	@Test(priority = 15)
 	public void verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -715,11 +668,8 @@ public class LoginPageTest extends TestBase{
 	
 	
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 15)
+	@Test(priority = 16)
 	public void verifyUserCannotResetForgetPasswordWithEmptyInputField() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -766,7 +716,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 16)
+	@Test(priority = 17)
 	public void verifyUserCanNavigateToTermsAndConditionsPage() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();
@@ -806,11 +756,8 @@ public class LoginPageTest extends TestBase{
 	
 	
 	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 17)
+	@Test(priority = 18)
 	public void verifyUserCanClickOnTermsAndConditionsLink() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginLink();

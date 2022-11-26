@@ -33,7 +33,7 @@ public class HomePage extends TestBase{
 	
 	
 	
-	@FindBy(xpath = "//a[contains(text(),'Schools/Organizations')]") // "//a[contains(text(),'For Sponsors/Organization')]"
+	@FindBy(xpath = "//a[normalize-space()='Schools/Organizations']") 
 	@CacheLookup
 	WebElement schools_OrganizationsLink;
 	

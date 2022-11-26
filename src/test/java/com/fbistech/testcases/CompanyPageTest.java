@@ -38,16 +38,11 @@ public class CompanyPageTest extends TestBase {
 	
 	
 	
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void verifyUserCanClickCompanyLink()
 	{	
 		homePage = companyPage.clickOnCompanyLink();
 	}
-	
-	
-	
-	
-	
 	
 	
 	

@@ -1,6 +1,5 @@
 package com.fbistech.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -205,7 +204,7 @@ public class LoginPage extends TestBase {
 	}
 	
 
-	public String validateLoginPageTitle()
+	public String validateLoginPageTitle() 
 	{
 		return driver.getTitle(); //this method should return title of the page 
 	}
@@ -227,7 +226,7 @@ public class LoginPage extends TestBase {
 		Thread.sleep(2000);
 		passWordField.sendKeys(passWord);
 		Thread.sleep(2000);
-//		showPasswordEye.click(); 
+		showPasswordEye.click(); 
 		Thread.sleep(2000); 
 		loginButton.click(); 
 		Thread.sleep(5000); 

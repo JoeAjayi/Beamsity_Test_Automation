@@ -68,10 +68,6 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	
-	
-	
-	
-	
 	@JiraPolicy(logTicketReady=true)
 	@Test(priority = 1) 
 	public void verifyUserCanClickSchools_OrganizationsPageLink() throws Exception
@@ -100,12 +96,8 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	
-	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void verifyUserCanClickOnTeachOnBeamsitykLink() throws Exception
 	{
 		Thread.sleep(4000);
@@ -130,12 +122,8 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	
-	
-	
-	
-	
 	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void verifyUserCanClickOnContactUsLinks() throws Exception
 	{	
 		Thread.sleep(4000);
@@ -163,13 +151,9 @@ public class ContactUsPageTest extends TestBase {
 	}
 	
 	
-	
-	
-	
-	
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void verifyUserCanClickOnLoginLink() throws Exception
 	{
 		Thread.sleep(4000);
@@ -201,14 +185,10 @@ public class ContactUsPageTest extends TestBase {
 		Assert.assertTrue(text);
 	}
 	
-	
-	
-	
-	
-	
+		
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 5)
+	@Test(priority = 5)
 	public void verifyUserCanclickOnPartnerWithUsLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -228,17 +208,13 @@ public class ContactUsPageTest extends TestBase {
 		
 		boolean text = driver.getPageSource().contains("Partner with us today");
 		System.out.println(text);
-		Assert.assertTrue(text);
+		Assert.assertTrue(text); 
 	}
 	
 	
-	
-	
-	
-	
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 6)
+	@Test(priority = 6)
 	public void verifyOfficeAddressIsDisplayed() throws Exception
 	{
 		Thread.sleep(5000);
@@ -263,13 +239,9 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	
-
-
 //	<----------------- ContactUsPage body ---------------->
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 7)
+	@Test(priority = 7)
 	public void verifyUserIsOfficePhoneNumberisDisplayed() throws Exception
 	{
 		Thread.sleep(4000); 
@@ -290,12 +262,8 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	
-	
-	
-
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 8)
+	@Test(priority = 8)
 	public void verifyUserCanClickOnAboutUsLink() throws Exception
 	{
 		Thread.sleep(5000);
@@ -320,11 +288,6 @@ public class ContactUsPageTest extends TestBase {
 	}
 	
 
-
-	
-	
-	
-	
 	
 	@JiraPolicy(logTicketReady = true)
 	@Test(priority = 9)
@@ -352,14 +315,9 @@ public class ContactUsPageTest extends TestBase {
 	}
 	
 
-	
-	
-	
-	
-	
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 10)
+	@Test(priority = 10)
 	public void verifyUserIsRedirectedToGoogleMapNavigation_ClickOnContactAddressLink() throws Exception
 	{
 		Thread.sleep(4000); 
@@ -387,14 +345,10 @@ public class ContactUsPageTest extends TestBase {
 		Assert.assertEquals(footerNamelabel, "50 Awolowo Rd, Ikoyi 106104, Lagos", " The address displayed does not matched");
 	}
 	
-	
-	
-	
-	
-	
+		
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 11)
+	@Test(priority = 11)
 	public void verifyUserCanSignUpToMailingList() throws Exception
 	{
 		Thread.sleep(5000);
@@ -414,16 +368,11 @@ public class ContactUsPageTest extends TestBase {
 		Assert.assertTrue(successPromptText);
 		System.out.println(successPromptText);
 	}
-
-	
-	
-	
-	
 	
 	
 	 
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 12)
+	@Test(priority = 12)
 	public void verifyUserCannotSignUpToMailingListWithEmail_WithOutDotCom() throws Exception
 	{
 		Thread.sleep(5000);
@@ -447,12 +396,8 @@ public class ContactUsPageTest extends TestBase {
 
 	
 	
-	
-	
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 13)
+	@Test(priority = 13)
 	public void verifyUserCannotSignUpToMailingListWithEmail_WithoutATgmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -475,12 +420,8 @@ public class ContactUsPageTest extends TestBase {
 	
 	
 	
-	
-
-	
-	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 14)
+	@Test(priority = 14)
 	public void verifyUserCannotSignUpToMailingListWith_PhoneNumber() throws Exception
 	{
 		Thread.sleep(5000);
@@ -501,13 +442,9 @@ public class ContactUsPageTest extends TestBase {
 	}
 	
 	
-	
-	
-
-	
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 15)
+	@Test(priority = 15)
 	public void verify_SUCCESS_IsPromptedWhenUserSuccessfullySignUpToMailingListWithValidEmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -529,13 +466,9 @@ public class ContactUsPageTest extends TestBase {
 	}
 	
 	
-	
-	
-	
-	
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 16)
+	@Test(priority = 16)
 	public void verify_InvalidEmailAddress_IsPromptedWhenUserAttemptedToSignUpToMailingListWithInvalidEmail() throws Exception
 	{
 		Thread.sleep(5000);
@@ -557,14 +490,10 @@ public class ContactUsPageTest extends TestBase {
 		System.out.println(InvalidEmailErrorPrompt);
 	}
 	
-
-	
-	
-	
 	
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 17)
+	@Test(priority = 17)
 	public void verifyUserCanClickOnGooglePlayLink() throws Exception
 	{
 		Thread.sleep(4000);
@@ -596,13 +525,9 @@ public class ContactUsPageTest extends TestBase {
 	}
 	
 	
-	
-	
-	
-	
-	
+		
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 18)
+	@Test(priority = 18)
 	public void verifyUserCanInstallBeamsityApp() throws Exception
 	{
 		Thread.sleep(5000);
@@ -633,14 +558,10 @@ public class ContactUsPageTest extends TestBase {
 		System.out.println(pageNamelText);
 	}
 	
-	
-	
-	
-	
-	
+		
 	
 	@JiraPolicy(logTicketReady = true)
-//	@Test(priority = 19)
+	@Test(priority = 19)
 	public void verifyUserCanClickOnContactUsEmail() throws Exception
 	{
 		Thread.sleep(3000);
@@ -671,28 +592,7 @@ public class ContactUsPageTest extends TestBase {
 	}
 	
 	
-	 
-	
-	
-	
-
-//	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 3) 
-//	public void verifyUserCanFillSponsorForm() throws Exception
-//	{
-//		sponsors_OrganizationPage = homePage.validateClickOnSponsors_OrganizationLink();
-//		Thread.sleep(3000);
-//		schools_OrganizationsPage = schools_OrganizationsPage.clickOnSponsor_OrganizationForm();
-//		homePage = schools_OrganizationsPage.createNewSchool(prop.getProperty("school_OrganizationName"),prop.getProperty("firstName"), 
-//				prop.getProperty("lastName"), prop.getProperty("emailAddress"), prop.getProperty("phoneNo"));
-//	}
-//	
-	
-	
-
-	
-	
-	
+		
 	
 	
 	@AfterMethod
